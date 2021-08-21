@@ -22,7 +22,7 @@ email=admin@fauzanvpn.com
 
 cd
 # common password debian 
-wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/idtunnel/sshtunnel/master/debian9/common-password-deb9"
+wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/password/common-password-deb9"
 chmod +x /etc/pam.d/common-password
 
 # go to root
