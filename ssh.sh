@@ -240,7 +240,6 @@ wget -O autokill "https://adiscript.vercel.app/vpn/autokill.sh"
 wget -O ceklim "https://adiscript.vercel.app/vpn/ceklim.sh"
 wget -O tendang "https://adiscript.vercel.app/vpn/tendang.sh"
 wget -O wbmn "https://adiscript.vercel.app/vpn/webmin.sh"
-wget -O xp "https://adiscript.vercel.app/vpn/xp.sh"
 wget -O kernel-updt "https://adiscript.vercel.app/vpn/kernel-update.sh"
 chmod +x add-host 
 chmod +x menu
@@ -259,7 +258,6 @@ chmod +x ceklim
 chmod +x ram
 chmod +x renew
 chmod +x wbmn
-chmod +x xp
 chmod +x kernel-updt
 
 #install websocker SSH dan Dropbear
