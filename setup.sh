@@ -30,6 +30,7 @@ echo "$host" >> /etc/v2ray/domain
 
 #install ssh ovpn
 wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/ssh.sh && chmod +x ssh.sh && screen -S ssh.sh ./ssh.sh
+wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/br/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 
 rm -f /root/ssh-vpn.sh
 rm -f /root/set-br.sh
