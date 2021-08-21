@@ -5,8 +5,8 @@
 cd
 
 #Install Script Websocket-SSH Python
-wget -O /usr/local/bin/ws-openssh https://raw.githubusercontent.com/4hidessh/hidessh/main/webscoket/openssh-socket.py
-wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/4hidessh/hidessh/main/webscoket/dropbear-ws.py
+wget -O /usr/local/bin/ws-openssh https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/openssh-socket.py
+wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/dropbear-ws.sh
 #wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/${GitUser}/test1/${namafolder}/main/ws-stunnel && chmod +x /usr/local/bin/ws-stunnel
 #wget -O /usr/local/bin/ws-ovpn https://raw.githubusercontent.com/${GitUser}/test1/${namafolder}/main/ws-ovpn && chmod +x /usr/local/bin/ws-ovpn
 
@@ -18,10 +18,10 @@ chmod +x /usr/local/bin/ws-dropbear
 
 
 #System OpenSSH Websocket-SSH Python
-wget -O /etc/systemd/system/ws-openssh.service https://raw.githubusercontent.com/4hidessh/hidessh/main/webscoket/service-wsopenssh && chmod +x /etc/systemd/system/ws-openssh.service
+wget -O /etc/systemd/system/ws-openssh.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/service-wsopenssh && chmod +x /etc/systemd/system/ws-openssh.service
 
 #System Dropbear Websocket-SSH Python
-wget -O /etc/systemd/system/ws-dropbear.service https://raw.githubusercontent.com/4hidessh/hidessh/main/webscoket/service-wsdropbear && chmod +x /etc/systemd/system/ws-dropbear.service
+wget -O /etc/systemd/system/ws-dropbear.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/service-wsdropbear && chmod +x /etc/systemd/system/ws-dropbear.service
 
 #System SSL/TLS Websocket-SSH Python
 #wget -O /etc/systemd/system/ws-stunnel.service https://raw.githubusercontent.com/${GitUser}/test1/${namafolder}/main/ws-stunnel.service && chmod +x /etc/systemd/system/ws-stunnel.service
