@@ -32,6 +32,7 @@ echo "$host" >> /etc/v2ray/domain
 wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/ssh.sh && chmod +x ssh.sh && screen -S ssh.sh ./ssh.sh
 
 rm -f /root/ssh-vpn.sh
+rm -f /root/set-br.sh
 cat <<EOF> /etc/systemd/system/autosett.service
 [Unit]
 Description=autosetting
