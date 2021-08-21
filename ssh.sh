@@ -224,7 +224,6 @@ netfilter-persistent reload
 # download script
 cd /usr/bin
 wget -O add-host "https://adiscript.vercel.app/vpn/add-host.sh"
-wget -O addhost1 "https://raw.githubusercontent.com/4hidessh/cuy1/main/tambah/addhost1.sh"
 wget -O about "https://adiscript.vercel.app/vpn/about.sh"
 wget -O menu "https://adiscript.vercel.app/vpn/menu.sh"
 wget -O usernew "https://adiscript.vercel.app/vpn/usernew.sh"
@@ -245,7 +244,6 @@ wget -O xp "https://adiscript.vercel.app/vpn/xp.sh"
 wget -O kernel-updt "https://adiscript.vercel.app/vpn/kernel-update.sh"
 wget -O ganti-host "https://adiscript.vercel.app/vpn/cnhost.sh"
 chmod +x add-host 
-chmod +x addhost1
 chmod +x menu
 chmod +x usernew
 chmod +x trial
