@@ -242,7 +242,6 @@ wget -O tendang "https://adiscript.vercel.app/vpn/tendang.sh"
 wget -O wbmn "https://adiscript.vercel.app/vpn/webmin.sh"
 wget -O xp "https://adiscript.vercel.app/vpn/xp.sh"
 wget -O kernel-updt "https://adiscript.vercel.app/vpn/kernel-update.sh"
-wget -O ganti-host "https://adiscript.vercel.app/vpn/cnhost.sh"
 chmod +x add-host 
 chmod +x menu
 chmod +x usernew
