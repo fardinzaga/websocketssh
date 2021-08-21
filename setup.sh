@@ -29,7 +29,7 @@ echo "IP=$host" >> /var/lib/premium-script/ipvps.conf
 echo "$host" >> /etc/v2ray/domain
 
 #install ssh ovpn
-wget https://raw.githubusercontent.com/4hidessh/websocket/main/ssh.sh && chmod +x ssh.sh && screen -S ssh.sh ./ssh.sh
+wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/ssh.sh && chmod +x ssh.sh && screen -S ssh.sh ./ssh.sh
 
 rm -f /root/ssh-vpn.sh
 cat <<EOF> /etc/systemd/system/autosett.service
