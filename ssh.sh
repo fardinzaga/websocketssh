@@ -180,7 +180,7 @@ service sslh restart
 # Installing Service WebSocket
 #cat > /etc/systemd/system/edu-proxy.service << END
 #[Unit]
-#Description=Autoscript by HideSSH
+#Description=Autoscript by Fauzanvpn
 #Documentation=https://hidessh.com/blog
 #After=network.target nss-lookup.target
 #[Service]
@@ -207,11 +207,12 @@ apt -y install fail2ban
 
 # Custom Banner SSH
 echo "================  Banner ======================"
-wget -O /etc/issue.net "https://github.com/idtunnel/sshtunnel/raw/master/debian9/banner-custom.conf"
+wget -O /etc/issue.net "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/banner/banner-custom.conf"
 chmod +x /etc/issue.net
 
-echo "Banner /etc/issue.net" >> /etc/ssh/sshd_config
-echo "DROPBEAR_BANNER="/etc/issue.net"" >> /etc/default/dropbear
+# banner /etc/issue.net
+echo "Banner /etc/issue.net" >>/etc/ssh/sshd_config
+sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
 
 # blockir torrent
 apt install iptables-persistent -y
