@@ -240,15 +240,6 @@ wget -O renew "https://adiscript.vercel.app/vpn/renew.sh"
 wget -O autokill "https://adiscript.vercel.app/vpn/autokill.sh"
 wget -O ceklim "https://adiscript.vercel.app/vpn/ceklim.sh"
 wget -O tendang "https://adiscript.vercel.app/vpn/tendang.sh"
-wget -O change-port "https://adiscript.vercel.app/vpn/change.sh"
-wget -O port-ovpn "https://adiscript.vercel.app/vpn/port-ovpn.sh"
-wget -O port-ssl "https://adiscript.vercel.app/vpn/port-ssl.sh"
-wget -O port-wg "https://adiscript.vercel.app/vpn/port-wg.sh"
-wget -O port-tr "https://adiscript.vercel.app/vpn/port-tr.sh"
-wget -O port-sstp "https://adiscript.vercel.app/vpn/port-sstp.sh"
-wget -O port-squid "https://adiscript.vercel.app/vpn/port-squid.sh"
-wget -O port-ws "https://adiscript.vercel.app/vpn/port-ws.sh"
-wget -O port-vless "https://adiscript.vercel.app/vpn/port-vless.sh"
 wget -O wbmn "https://adiscript.vercel.app/vpn/webmin.sh"
 wget -O xp "https://adiscript.vercel.app/vpn/xp.sh"
 wget -O kernel-updt "https://adiscript.vercel.app/vpn/kernel-update.sh"
@@ -270,15 +261,6 @@ chmod +x tendang
 chmod +x ceklim
 chmod +x ram
 chmod +x renew
-chmod +x change-port
-chmod +x port-ovpn
-chmod +x port-ssl
-chmod +x port-wg
-chmod +x port-sstp
-chmod +x port-tr
-chmod +x port-squid
-chmod +x port-ws
-chmod +x port-vless
 chmod +x wbmn
 chmod +x xp
 chmod +x kernel-updt
