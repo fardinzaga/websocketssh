@@ -282,7 +282,6 @@ chmod +x port-vless
 chmod +x wbmn
 chmod +x xp
 chmod +x kernel-updt
-chmod +x ganti-host
 
 #install websocker SSH dan Dropbear
 wget https://raw.githubusercontent.com/4hidessh/hidessh/main/webscoket/install-ws.sh && chmod +x install-ws.sh && ./install-ws.sh
