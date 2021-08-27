@@ -100,7 +100,7 @@ wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/fardinzaga
 
 # install badvpn
 cd
-wget -O /usr/bin/badvpn-udpgw "https://adiscript.vercel.app/vpn/badvpn-udpgw64"
+wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/updgw/badvpn-udpgw64"
 chmod +x /usr/bin/badvpn-udpgw
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7100 --max-clients 500' /etc/rc.local
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7200 --max-clients 500' /etc/rc.local
