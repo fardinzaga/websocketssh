@@ -27,6 +27,21 @@ echo -e "* info         : Displaying System Information"
 echo -e "* about        : Info Script Auto Install"
 echo -e "* exit         : Exit From VPS "
 echo -e ""
-echo -e ""Create By Fauzanvpn
 echo -e "==============================================================="
 echo -e ""
+ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
+CITY=$(curl -s ipinfo.io/city )
+WKT=$(curl -s ipinfo.io/timezone )
+IPVPS=$(curl -s ipinfo.io/ip )
+jam=$(date +"%T")
+hari=$(date +"%A")
+tnggl=$(date +"%d-%B-%Y")
+echo -e "* Waktu         : $jam"
+echo -e "* Hari          : $hari"
+echo -e "* Tanggal       : $tnggl"
+echo -e "* ISP Name      : $ISP"
+echo -e "* City          : $CITY"
+echo -e "* IP VPS        : $IPVPS"
+echo -e ""
+echo -e "Created By Fauzanvpn"
+echo -e "==============================================================="
