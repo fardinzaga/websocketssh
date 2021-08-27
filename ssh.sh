@@ -216,7 +216,7 @@ sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dr
 
 # blockir torrent
 apt install iptables-persistent -y
-wget https://raw.githubusercontent.com/4hidessh/hidessh/main/security/torrent && chmod +x torrent && ./torrent
+wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/security/torrent && chmod +x torrent && ./torrent
 iptables-save > /etc/iptables.up.rules
 iptables-restore -t < /etc/iptables.up.rules
 netfilter-persistent save
@@ -296,7 +296,7 @@ screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7200 --max-clients 500
 screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7300 --max-clients 500
 
 history -c
-echo "unset HideSSH" >> /etc/profile
+echo "unset Fauzanvpn" >> /etc/profile
 
 #hapus file
 cd
