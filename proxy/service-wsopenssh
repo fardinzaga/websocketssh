@@ -1,6 +1,6 @@
 [Unit]
 Description=Websocket-OpenSSH By Fauzanvpn
-Documentation=https://hidessh.com
+Documentation=Fauzanvpn
 After=network.target nss-lookup.target
 
 [Service]
