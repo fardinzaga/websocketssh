@@ -13,8 +13,8 @@ wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/fardinzaga/
 #izin permision
 chmod +x /usr/local/bin/ws-openssh
 chmod +x /usr/local/bin/ws-dropbear
-chmod +x /usr/local/bin/ws-stunnel
-chmod +x /usr/local/bin/ws-ovpn
+#chmod +x /usr/local/bin/ws-stunnel
+#chmod +x /usr/local/bin/ws-ovpn
 
 
 #System OpenSSH Websocket-SSH Python
