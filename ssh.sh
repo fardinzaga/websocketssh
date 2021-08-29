@@ -144,6 +144,10 @@ socket = r:TCP_NODELAY=1
 accept = 444
 connect = 127.0.0.1:44
 
+[slws]
+accept = 443
+connect = 127.0.0.1:2086
+
 [OpenSSH]
 accept = 222
 connect = 127.0.0.1:22
