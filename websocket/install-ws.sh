@@ -13,7 +13,7 @@ wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/fardinzaga/w
 #izin permision
 chmod +x /usr/local/bin/ws-openssh
 chmod +x /usr/local/bin/ws-dropbear
-#chmod +x /usr/local/bin/ws-stunnel
+chmod +x /usr/local/bin/ws-stunnel
 #chmod +x /usr/local/bin/ws-ovpn
 
 
@@ -43,9 +43,9 @@ systemctl start ws-dropbear.service
 systemctl restart ws-dropbear.service
 
 #Enable & Start & Restart ws-openssh service
-#systemctl enable ws-stunnel.service
-#systemctl start ws-stunnel.service
-#systemctl restart ws-stunnel.service
+systemctl enable ws-stunnel.service
+systemctl start ws-stunnel.service
+systemctl restart ws-stunnel.service
 
 #Enable & Start ws-ovpn service
 #systemctl enable ws-ovpn.service
