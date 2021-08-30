@@ -200,7 +200,7 @@ service sslh restart
 #systemctl restart edu-proxy
 
 #OpenVPN
-#wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/vpn/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
+wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/vpn/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
 
 # install fail2ban
 apt -y install fail2ban
