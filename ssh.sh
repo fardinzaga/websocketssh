@@ -174,8 +174,8 @@ service sslh restart
 
 # Installl SSH Websocket 
 
-#wget -q -O /usr/local/bin/edu-proxy https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/proxy-cf.py
-#chmod +x /usr/local/bin/edu-proxy
+wget -q -O /usr/local/bin/edu-proxy https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/proxy-cf.py
+chmod +x /usr/local/bin/edu-proxy
 
 # Installing Service WebSocket
 #cat > /etc/systemd/system/edu-proxy.service << END
