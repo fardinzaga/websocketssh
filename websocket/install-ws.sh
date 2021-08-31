@@ -32,7 +32,7 @@ wget -O /etc/systemd/system/ws-stunnel.service https://raw.githubusercontent.com
 wget -O /etc/systemd/system/ssh-socket.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/ssh-socket.service && chmod +x /etc/systemd/system/ssh-socket.service
 
 ##System Websocket-OpenVPN Python
-#wget -O /etc/systemd/system/ws-ovpn.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/ws.ovpn.service && chmod +x /etc/systemd/system/ws-ovpn.service
+#wget -O /etc/systemd/system/ws-ovpn.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/ws-ovpn.service && chmod +x /etc/systemd/system/ws-ovpn.service
 
 #restart service
 #
