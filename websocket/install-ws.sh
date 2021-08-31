@@ -8,12 +8,14 @@ cd
 wget -O /usr/local/bin/ws-openssh https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/openssh-socket.py
 wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/dropbear-ws.py
 wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/ws-stunnel && chmod +x /usr/local/bin/ws-stunnel
+#wget -O /usr/local/bin/ssh-socket
 #wget -O /usr/local/bin/ws-ovpn https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/ws-ovpn && chmod +x /usr/local/bin/ws-ovpn
 
 #izin permision
 chmod +x /usr/local/bin/ws-openssh
 chmod +x /usr/local/bin/ws-dropbear
 chmod +x /usr/local/bin/ws-stunnel
+chmod +x /usr/local/bin/ssh-socket
 #chmod +x /usr/local/bin/ws-ovpn
 
 
@@ -23,8 +25,11 @@ wget -O /etc/systemd/system/ws-openssh.service https://raw.githubusercontent.com
 #System Dropbear Websocket-SSH Python
 wget -O /etc/systemd/system/ws-dropbear.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/service-wsdropbear && chmod +x /etc/systemd/system/ws-dropbear.service
 
-#System SSL/TLS Websocket-SSH Python
+#System OpenSSH Websocket-SSH Python
 wget -O /etc/systemd/system/ws-stunnel.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/ws-stunnel.service && chmod +x /etc/systemd/system/ws-stunnel.service
+
+#System SSL/TLS Websocket-SSH Python
+
 
 ##System Websocket-OpenVPN Python
 #wget -O /etc/systemd/system/ws-ovpn.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/ws.ovpn.service && chmod +x /etc/systemd/system/ws-ovpn.service
@@ -46,6 +51,11 @@ systemctl restart ws-dropbear.service
 systemctl enable ws-stunnel.service
 systemctl start ws-stunnel.service
 systemctl restart ws-stunnel.service
+
+#Enable & Start & Restart ws-openssh service
+systemctl enable ssh-socket.service
+systemctl start ssh-socket.service
+systemctl restart ssh-socket.service
 
 #Enable & Start ws-ovpn service
 #systemctl enable ws-ovpn.service
