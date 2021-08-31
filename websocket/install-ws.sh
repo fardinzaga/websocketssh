@@ -42,7 +42,7 @@ systemctl enable ws-dropbear.service
 systemctl start ws-dropbear.service
 systemctl restart ws-dropbear.service
 
-#Enable & Start & Restart ws-openssh service
+#Enable & Start & Restart ws-stunnel service
 systemctl enable ws-stunnel.service
 systemctl start ws-stunnel.service
 systemctl restart ws-stunnel.service
