@@ -18,6 +18,7 @@ domain=$(cat /etc/v2ray/domain)
 ssl="$(cat ~/log-install.txt | grep -w "Stunnel4" | cut -d: -f2)"
 sqd="$(cat ~/log-install.txt | grep -w "Squid" | cut -d: -f2)"
 portws="$(cat ~/log-install.txt | grep -w "WebSocket" | cut -d: -f2)"
+wsport="$(cat ~/log-install.txt | grep -w "WebSocket All Port" | cut -d: -f2)"
 ovpn="$(netstat -nlpt | grep -i openvpn | grep -i 0.0.0.0 | awk '{print $4}' | cut -d: -f2)"
 ovpn2="$(netstat -nlpu | grep -i openvpn | grep -i 0.0.0.0 | awk '{print $4}' | cut -d: -f2)"
 Login=trial`</dev/urandom tr -dc X-Z0-9 | head -c4`
