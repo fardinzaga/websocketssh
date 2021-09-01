@@ -15,7 +15,9 @@ fi
 clear
 IP=$(wget -qO- icanhazip.com);
 domain=$(cat /etc/v2ray/domain)
+ssl="$(cat ~/log-install.txt | grep -w "Stunnel4" | cut -d: -f2)"
 sqd="$(cat ~/log-install.txt | grep -w "Squid" | cut -d: -f2)"
+portws="$(cat ~/log-install.txt | grep -w "WebSocket" | cut -d: -f2)"
 ovpn="$(netstat -nlpt | grep -i openvpn | grep -i 0.0.0.0 | awk '{print $4}' | cut -d: -f2)"
 ovpn2="$(netstat -nlpu | grep -i openvpn | grep -i 0.0.0.0 | awk '{print $4}' | cut -d: -f2)"
 Login=trial`</dev/urandom tr -dc X-Z0-9 | head -c4`
@@ -44,10 +46,10 @@ echo -e "Host           : $IP"
 echo -e "Host           : $domain"
 echo -e "OpenSSH        : 22"
 echo -e "Dropbear       : 109, 143"
-echo -e "SSL/TLS        : 443, 777"
+echo -e "SSL/TLS        :$ssl"
 echo -e "Port Squid     :$sqd"
-echo -e "Port WebSocket : 2082"
-echo -e "Port Ws All    : 2086 , 2092"
+echo -e "Port WebSocket :$portws"
+echo -e "Port Ws All    : 2086 , 2087"
 echo -e "OpenVPN        : TCP $ovpn http://$IP:81/client-tcp-$ovpn.ovpn"
 echo -e "OpenVPN        : UDP $ovpn2 http://$IP:81/client-udp-$ovpn2.ovpn"
 echo -e "OpenVPN        : SSL 442 http://$IP:81/client-tcp-ssl.ovpn"
