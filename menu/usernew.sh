@@ -19,6 +19,7 @@ read -p "Expired (hari): " masaaktif
 
 IP=$(wget -qO- icanhazip.com);
 domain=$(cat /etc/v2ray/domain)
+ssl="$(cat ~/log-install.txt | grep -w "Stunnel4" | cut -d: -f2)"
 sqd="$(cat ~/log-install.txt | grep -w "Squid" | cut -d: -f2)"
 portws="$(cat ~/log-install.txt | grep -w "WebSocket" | cut -d: -f2)"
 ovpn="$(netstat -nlpt | grep -i openvpn | grep -i 0.0.0.0 | awk '{print $4}' | cut -d: -f2)"
@@ -48,7 +49,7 @@ echo -e "Host           : $IP"
 echo -e "Host           : $domain"
 echo -e "OpenSSH        : 22"
 echo -e "Dropbear       : 109, 143"
-echo -e "SSL/TLS        : 444"
+echo -e "SSL/TLS        :$ssl"
 echo -e "Port Squid     :$sqd"
 echo -e "Port WebSocket :$portws"
 echo -e "SSH Alt Port   : 80 , 8880"
