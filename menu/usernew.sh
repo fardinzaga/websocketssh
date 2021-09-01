@@ -20,7 +20,6 @@ read -p "Expired (hari): " masaaktif
 IP=$(wget -qO- icanhazip.com);
 domain=$(cat /etc/v2ray/domain)
 sqd="$(cat ~/log-install.txt | grep -w "Squid" | cut -d: -f2)"
-portws="$(cat ~/log-install.txt | grep -w "WebSocket" | cut -d: -f2)"
 ovpn="$(netstat -nlpt | grep -i openvpn | grep -i 0.0.0.0 | awk '{print $4}' | cut -d: -f2)"
 ovpn2="$(netstat -nlpu | grep -i openvpn | grep -i 0.0.0.0 | awk '{print $4}' | cut -d: -f2)"
 sleep 1
@@ -50,7 +49,7 @@ echo -e "OpenSSH        : 22"
 echo -e "Dropbear       : 109, 143"
 echo -e "SSL/TLS        : 443, 777"
 echo -e "Port Squid     :$sqd"
-echo -e "Port WebSocket :$portws"
+echo -e "Port WebSocket : 2092"
 echo -e "Port Ws All    : 2086 , 2081"
 echo -e "OpenVPN        : TCP $ovpn http://$IP:81/client-tcp-$ovpn.ovpn"
 echo -e "OpenVPN        : UDP $ovpn2 http://$IP:81/client-udp-$ovpn2.ovpn"
