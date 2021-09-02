@@ -189,7 +189,7 @@ service sslh restart
 #CapabilityBoundingSet=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
 #AmbientCapabilities=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
 #NoNewPrivileges=true
-#ExecStart=/usr/bin/python -O /usr/local/bin/edu-proxy 8182
+#ExecStart=/usr/bin/python -O /usr/local/bin/edu-proxy 8880
 #Restart=on-failure
 #[Install]
 #WantedBy=multi-user.target
