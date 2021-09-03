@@ -150,7 +150,7 @@ connect = 127.0.0.1:22
 
 [slws]
 accept = 443
-connect = 127.0.0.1:2053
+connect = 127.0.0.1:2086
 
 [openvpn]
 accept = 442
