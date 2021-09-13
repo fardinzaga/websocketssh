@@ -22,7 +22,11 @@ rm -f setup.sh
 exit 0
 fi
 mkdir /var/lib/premium-script;
-echo "IP=" >> /var/lib/premium-script/ipvps.conf
+mkdir /etc/v2ray;
+echo "Tolong masukan domain yang sudah dipointing agar v2ray service work"
+read -p "Hostname / Domain: " host
+echo "IP=$host" >> /var/lib/premium-script/ipvps.conf
+echo "$host" >> /etc/v2ray/domain
 
 #install ssh ovpn
 wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/ssh.sh && chmod +x ssh.sh && screen -S ssh.sh ./ssh.sh
