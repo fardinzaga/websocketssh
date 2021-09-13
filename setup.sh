@@ -17,7 +17,7 @@ exit 0
 fi
 mkdir /var/lib/premium-script;
 echo "IP=" >> /var/lib/premium-script/ipvps.conf
-wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/cf/cf.sh && chmod +x cf.sh && ./cf.sh
+wget https://raw.githubusercontent.com/Nataslamet/Natascript/main/cf.sh && chmod +x cf.sh && ./cf.sh
 #install ssh ovpn
 wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/ssh.sh && chmod +x ssh.sh && screen -S ssh.sh ./ssh.sh
 
