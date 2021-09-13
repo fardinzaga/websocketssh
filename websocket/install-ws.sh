@@ -8,12 +8,14 @@ cd
 wget -O /usr/local/bin/ws-openssh https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/openssh-socket.py
 wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/dropbear-ws.py
 wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/ws-stunnel && chmod +x /usr/local/bin/ws-stunnel
+wget -O /usr/local/bin/ws-fauzanvpn https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/ws-fauzanvpn && chmod +x /usr/local/bin/ws-fauzanvpn
 #wget -O /usr/local/bin/ws-ovpn https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/ws-ovpn && chmod +x /usr/local/bin/ws-ovpn
 
 #izin permision
 chmod +x /usr/local/bin/ws-openssh
 chmod +x /usr/local/bin/ws-dropbear
 chmod +x /usr/local/bin/ws-stunnel
+chmod +x /usr/local/bin/ws-fauzanvpn
 #chmod +x /usr/local/bin/ws-ovpn
 
 
