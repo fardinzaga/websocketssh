@@ -204,6 +204,9 @@ systemctl daemon-reload
 systemctl enable edu-proxy
 systemctl restart edu-proxy
 
+#portopenssh
+wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/portopenssh &&  chmod +x portopenssh && ./portopenssh
+
 #OpenVPN
 #wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/vpn/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
 
