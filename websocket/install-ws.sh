@@ -36,7 +36,7 @@ wget -O /etc/systemd/system/ws-stunnel.service https://raw.githubusercontent.com
 wget -O /etc/systemd/system/ws-ovpn.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/service-wsjoung && chmod +x /etc/systemd/system/ws-joung.service
 
 ##System Websocket-OpenVPN Python
-#wget -O /etc/systemd/system/ws-ovpn.service https://raw.githubusercontent.com/${GitUser}/test1/${namafolder}/main/ws-ovpn.service && chmod +x /etc/systemd/system/ws-ovpn.service
+#wget -O /etc/systemd/system/ws-ovpn.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/ws-ovpn.service && chmod +x /etc/systemd/system/ws-ovpn.service
 
 #restart service
 #
@@ -61,7 +61,7 @@ systemctl enable ws-fauzanvpn.service
 systemctl start ws-fauzanvpn.service
 systemctl restart ws-fauzanvpn.service
 
-#Enable & Start ws-ovpn service
+#Enable & Start & Restart ws-joung service
 systemctl enable ws-joung.service
 systemctl start ws-joung.service
 systemctl restart ws-joung.service
