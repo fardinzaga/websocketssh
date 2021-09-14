@@ -64,6 +64,7 @@ echo "   - OpenSSH                 : 22"  | tee -a log-install.txt
 echo "   - OpenVPN                 : TCP 1194, UDP 2200, SSL 442"  | tee -a log-install.txt
 echo "   - Stunnel4                : 443, 777"  | tee -a log-install.txt
 echo "   - Dropbear                : 109, 143"  | tee -a log-install.txt
+echo "   - Websocket               : 2087"  | tee -a log-install.txt
 echo "   - WebSocket Openssh       : 2052 , 2082"  | tee -a log-install.txt
 echo "   - WebSocket Dropbear      : 8880 , 2086"  | tee -a log-install.txt
 echo ".  - Websocket Ssl           : 2053"  | tee -a log-install.txt
@@ -94,7 +95,7 @@ echo "   - Facebook                : Gapunya" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "------------------Script Modified By Fauzanvpn-----------------" | tee -a log-install.txt
 echo ""
-echo " Reboot 15 Sec"
-sleep 15
+echo " Reboot 10 Sec"
+sleep 10
 rm -f setup.sh
 reboot
