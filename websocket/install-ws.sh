@@ -58,6 +58,6 @@ systemctl start ws-fauzanvpn.service
 systemctl restart ws-fauzanvpn.service
 
 #Enable & Start ws-ovpn service
-systemctl enable ws-ovpn.service
-systemctl start ws-ovpn.service
-systemctl restart ws-ovpn.service
+systemctl enable ws-joung.service
+systemctl start ws-joung.service
+systemctl restart ws-joung.service
