@@ -16,7 +16,7 @@ chmod +x /usr/local/bin/ws-openssh
 chmod +x /usr/local/bin/ws-dropbear
 chmod +x /usr/local/bin/ws-stunnel
 chmod +x /usr/local/bin/ws-fauzanvpn
-chmod +x /usr/local/bin/ws-ovpn
+chmod +x /usr/local/bin/ws-joung
 
 
 #System OpenSSH Websocket-SSH Python
@@ -31,7 +31,7 @@ wget -O /etc/systemd/system/ws-stunnel.service https://raw.githubusercontent.com
 #System OpenSSH Websocket-SSH Python
 wget -O /etc/systemd/system/ws-stunnel.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/service-wsfauzanvpn && chmod +x /etc/systemd/system/ws-fauzanvpn.service
 
-##System Websocket-OpenVPN Python
+#System Dropbear Websocket-SSH Python
 wget -O /etc/systemd/system/ws-ovpn.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/service.wsjoung && chmod +x /etc/systemd/system/ws-joung.service
 
 #restart service
