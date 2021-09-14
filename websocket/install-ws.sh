@@ -10,7 +10,7 @@ wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/fardinzaga/
 wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/ws-stunnel && chmod +x /usr/local/bin/ws-stunnel
 wget -O /usr/local/bin/ws-fauzanvpn https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/fauzanvpn-ws.py
 wget -O /usr/local/bin/ws-joung https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/joung-ws.py
-#wget -O /usr/local/bin/ws-ovpn https://raw.githubusercontent.com/${GitUser}/test1/${namafolder}/main/ws-ovpn && chmod +x /usr/local/bin/ws-ovpn
+#wget -O /usr/local/bin/ws-ovpn https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/ws-ovpn && chmod +x /usr/local/bin/ws-ovpn
 
 #izin permision
 chmod +x /usr/local/bin/ws-openssh
