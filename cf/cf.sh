@@ -3,13 +3,15 @@ red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
 MYIP=$(wget -qO- icanhazip.com);
-echo "Checking VPS"
 apt install jq curl -y
-DOMAIN=zafrnavpn.xyz
+rm -f /root/domain
+rm -f /etc/v2ray/domain
+
+DOMAIN=akbar-store.me
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-SUB_DOMAIN=${sub}.zafrnavpn.xyz
-CF_ID=fauzanvpn@gmail.com
-CF_KEY=d24ba132a523eacac95952ddaa246485
+SUB_DOMAIN=${sub}.akbar-store.me
+CF_ID=sandigaming01@gmail.com
+CF_KEY=3bbac9ca50413bd6b05c1b7989871a077c2c3
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 echo "Updating DNS for ${SUB_DOMAIN}..."
@@ -38,4 +40,5 @@ RESULT=$(curl -sLX PUT "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_r
      --data '{"type":"A","name":"'${SUB_DOMAIN}'","content":"'${IP}'","ttl":120,"proxied":false}')
 echo "Host : $SUB_DOMAIN"
 echo $SUB_DOMAIN > /root/domain
-rm -f /root/cf.sh
+echo $SUB_DOMAIN > /etc/v2ray/domain
+echo $SUB_DOMAIN > /var/lib/crot-script/ipvps.conf
