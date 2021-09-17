@@ -10,8 +10,8 @@ rm -f /etc/v2ray/domain
 DOMAIN=zafrnavpn.xyz
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
 SUB_DOMAIN=${sub}.zafrnavpn.xyz
-CF_ID=sandigaming01@gmail.com
-CF_KEY=3bbac9ca50413bd6b05c1b7989871a077c2c3
+CF_ID=3omar.pokerface1t@roithsai.com
+CF_KEY=a80cef5ae65614455aa4285a40bc45aa63a93
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 echo "Updating DNS for ${SUB_DOMAIN}..."
