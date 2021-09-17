@@ -7,9 +7,9 @@ apt install jq curl -y
 rm -f /root/domain
 rm -f /etc/v2ray/domain
 
-DOMAIN=akbar-store.me
+DOMAIN=zafrnavpn.xyz
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-SUB_DOMAIN=${sub}.akbar-store.me
+SUB_DOMAIN=${sub}.zafrnavpn.xyz
 CF_ID=sandigaming01@gmail.com
 CF_KEY=3bbac9ca50413bd6b05c1b7989871a077c2c3
 set -euo pipefail
