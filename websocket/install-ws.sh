@@ -41,7 +41,7 @@ wget -O /etc/systemd/system/ws-stunnel.service https://raw.githubusercontent.com
 wget -O /etc/systemd/system/ws-maulana.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/service.wsmaulana && chmod +x /etc/systemd/system/ws-maulana.service
 
 #System OpenSSH Websocket-SSH Python
-wget -O /etc/systemd/system/ws-maulana.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/service.wsmaulana && chmod +x /etc/systemd/system/ws-maulana.service
+wget -O /etc/systemd/system/ws-maulana.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/service.wsudin && chmod +x /etc/systemd/system/ws-udin.service
 
 #restart service
 #
