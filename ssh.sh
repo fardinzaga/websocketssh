@@ -143,16 +143,16 @@ socket = l:TCP_NODELAY=1
 socket = r:TCP_NODELAY=1
 
 [ws-stunnel]
-accept = 2053
+accept = 443
 connect = 127.0.0.1:97
 
 [dropbear]
-accept = 443
+accept = 444
 connect = 127.0.0.1:44
 
-[dropbear]
-accept = 777
-connect = 127.0.0.1:77
+[OpenSSH]
+accept = 222
+connect = 127.0.0.1:22
 
 [openvpn]
 accept = 442
