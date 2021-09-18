@@ -148,14 +148,10 @@ connect = 127.0.0.1:97
 
 [dropbear]
 accept = 443
-connect = 127.0.0.1:44
+connect = 127.0.0.1:22
 
 [dropbear]
 accept = 777
-connect = 127.0.0.1:44
-
-[OpenSSH]
-accept = 222
 connect = 127.0.0.1:22
 
 [openvpn]
