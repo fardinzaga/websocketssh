@@ -142,8 +142,12 @@ socket = a:SO_REUSEADDR=1
 socket = l:TCP_NODELAY=1
 socket = r:TCP_NODELAY=1
 
+[ws-stunnel]
+accept = 2053
+connect = 127.0.0.1:97
+
 [dropbear]
-accept = 444
+accept = 443
 connect = 127.0.0.1:44
 
 [OpenSSH]
@@ -153,10 +157,6 @@ connect = 127.0.0.1:22
 [openvpn]
 accept = 442
 connect = 127.0.0.1:1194
-
-[ws-stunnel]
-accept = 443
-connect = 127.0.0.1:700
 
 END
 
