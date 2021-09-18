@@ -11,6 +11,7 @@ wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/fardinzaga/
 wget -O /usr/local/bin/ws-fauzanvpn https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/fauzanvpn-ws.py
 #wget -O /usr/local/bin/ws-ovpn https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/ws-ovpn && chmod +x /usr/local/bin/ws-ovpn
 wget -O /usr/local/bin/ws-maulana https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/maulana-ws.py
+wget -O /usr/local/bin/ws-udin https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/udin-ws.py
 
 #izin permision
 chmod +x /usr/local/bin/ws-openssh
@@ -19,6 +20,7 @@ chmod +x /usr/local/bin/ws-dropbear
 chmod +x /usr/local/bin/ws-fauzanvpn
 #chmod +x /usr/local/bin/ws-ovpn
 chmod +x /usr/local/bin/ws-maulana
+chmod +x /usr/local/bin/ws-udin
 
 #System OpenSSH Websocket-SSH Python
 wget -O /etc/systemd/system/ws-openssh.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/service-wsopenssh && chmod +x /etc/systemd/system/ws-openssh.service
@@ -34,6 +36,9 @@ wget -O /etc/systemd/system/ws-stunnel.service https://raw.githubusercontent.com
 
 ##System Websocket-OpenVPN Python
 #wget -O /etc/systemd/system/ws-ovpn.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/ws-ovpn.service && chmod +x /etc/systemd/system/ws-ovpn.service
+
+#System OpenSSH Websocket-SSH Python
+wget -O /etc/systemd/system/ws-maulana.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/service.wsmaulana && chmod +x /etc/systemd/system/ws-maulana.service
 
 #System OpenSSH Websocket-SSH Python
 wget -O /etc/systemd/system/ws-maulana.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/service.wsmaulana && chmod +x /etc/systemd/system/ws-maulana.service
@@ -70,3 +75,8 @@ systemctl restart ws-fauzanvpn.service
 systemctl enable ws-maulana.service
 systemctl start ws-maulana.service
 systemctl restart ws-maulana.service
+
+#Enable & Start & Restart ws-udin service
+systemctl enable ws-udin.service
+systemctl start ws-udin.service
+systemctl restart ws-udin.service
