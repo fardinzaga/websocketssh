@@ -150,6 +150,10 @@ connect = 127.0.0.1:97
 accept = 443
 connect = 127.0.0.1:44
 
+[dropbear]
+accept = 777
+connect = 127.0.0.1:44
+
 [OpenSSH]
 accept = 222
 connect = 127.0.0.1:22
