@@ -143,15 +143,15 @@ socket = l:TCP_NODELAY=1
 socket = r:TCP_NODELAY=1
 
 [ws-stunnel]
-accept = 443
+accept = 2053
 connect = 127.0.0.1:97
 
 [dropbear]
-accept = 444
-connect = 127.0.0.1:44
+accept = 443
+connect = 127.0.0.1:22
 
-[OpenSSH]
-accept = 222
+[dropbear]
+accept = 444
 connect = 127.0.0.1:22
 
 [openvpn]
@@ -169,14 +169,6 @@ cat key.pem cert.pem >> /etc/stunnel/stunnel.pem
 # konfigurasi stunnel
 sed -i 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
 /etc/init.d/stunnel4 restart
-
-#install sslh
-cd
-apt-get install sslh -y
-
-#konfigurasi
-wget -O /etc/default/sslh "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/sslh/sslh"
-service sslh restart
 
 #!/bin/bash
 # Proxy For Edukasi, Imclass & gamemax
