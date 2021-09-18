@@ -9,15 +9,15 @@ wget -O /usr/local/bin/ws-openssh https://raw.githubusercontent.com/fardinzaga/w
 wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/dropbear-ws.py
 wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/ws-stunnel && chmod +x /usr/local/bin/ws-stunnel
 wget -O /usr/local/bin/ws-fauzanvpn https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/fauzanvpn-ws.py
-wget -O /usr/local/bin/ws-ovpn https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/ws-ovpn && chmod +x /usr/local/bin/ws-ovpn
-wget -O /usr/local/bin/ws-maulana https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/dropbear-ws.py
+#wget -O /usr/local/bin/ws-ovpn https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/ws-ovpn && chmod +x /usr/local/bin/ws-ovpn
+wget -O /usr/local/bin/ws-maulana https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/maulana-ws.py
 
 #izin permision
 chmod +x /usr/local/bin/ws-openssh
 chmod +x /usr/local/bin/ws-dropbear
 chmod +x /usr/local/bin/ws-stunnel
 chmod +x /usr/local/bin/ws-fauzanvpn
-chmod +x /usr/local/bin/ws-ovpn
+#chmod +x /usr/local/bin/ws-ovpn
 chmod +x /usr/local/bin/ws-maulana
 
 #System OpenSSH Websocket-SSH Python
@@ -52,9 +52,9 @@ systemctl start ws-dropbear.service
 systemctl restart ws-dropbear.service
 
 #Enable & Start & Restart ws-stunnel service
-systemctl enable ws-stunnel.service
-systemctl start ws-stunnel.service
-systemctl restart ws-stunnel.service
+#systemctl enable ws-stunnel.service
+#systemctl start ws-stunnel.service
+#systemctl restart ws-stunnel.service
 
 #Enable & Start & Restart ws-fauzanvpn service
 systemctl enable ws-fauzanvpn.service
@@ -62,9 +62,9 @@ systemctl start ws-fauzanvpn.service
 systemctl restart ws-fauzanvpn.service
 
 #Enable & Start ws-ovpn service
-systemctl enable ws-ovpn.service
-systemctl start ws-ovpn.service
-systemctl restart ws-ovpn.service
+#systemctl enable ws-ovpn.service
+#systemctl start ws-ovpn.service
+#systemctl restart ws-ovpn.service
 
 #Enable & Start & Restart ws-maulana service
 systemctl enable ws-maulana.service
