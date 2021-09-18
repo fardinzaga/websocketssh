@@ -148,7 +148,7 @@ connect = 127.0.0.1:97
 
 [dropbear]
 accept = 443
-connect = 127.0.0.1:22
+connect = 127.0.0.1:44
 
 [dropbear]
 accept = 777
