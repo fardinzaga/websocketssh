@@ -29,7 +29,7 @@ wget -O /etc/systemd/system/ws-openssh.service https://raw.githubusercontent.com
 wget -O /etc/systemd/system/ws-dropbear.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/service-wsdropbear && chmod +x /etc/systemd/system/ws-dropbear.service
 
 #System OpenSSH Websocket-SSH Python
-wget -O /etc/systemd/system/ws-stunnel.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/service-wsfauzanvpn && chmod +x /etc/systemd/system/ws-fauzanvpn.service
+wget -O /etc/systemd/system/ws-fauzanvpn.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/service-wsfauzanvpn && chmod +x /etc/systemd/system/ws-fauzanvpn.service
 
 #System OpenSSH Websocket-SSH Python
 wget -O /etc/systemd/system/ws-maulana.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/service.wsmaulana && chmod +x /etc/systemd/system/ws-maulana.service
