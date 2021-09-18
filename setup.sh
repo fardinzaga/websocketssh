@@ -59,7 +59,7 @@ echo "   - Dropbear                : 109, 143"  | tee -a log-install.txt
 echo "   - Websocket               : 80"  | tee -a log-install.txt
 echo "   - WebSocket Openssh       : 2052 , 2082"  | tee -a log-install.txt
 echo "   - WebSocket Dropbear      : 8880 , 2086"  | tee -a log-install.txt
-echo "   - Websocket Ssl           : 2053"  | tee -a log-install.txt
+echo "   - Websocket Ssl           : 443"  | tee -a log-install.txt
 echo "   - Squid Proxy             : 3128, 8080 (limit to IP Server)"  | tee -a log-install.txt
 echo "   - Badvpn                  : 7100, 7200, 7300"  | tee -a log-install.txt
 echo "   - Nginx                   : 81"  | tee -a log-install.txt
