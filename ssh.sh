@@ -151,7 +151,7 @@ accept = 443
 connect = 127.0.0.1:22
 
 [dropbear]
-accept = 444
+accept = 777
 connect = 127.0.0.1:22
 
 [openvpn]
