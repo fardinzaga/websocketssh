@@ -63,5 +63,6 @@ echo -e "Expired On       : $exp"
 echo -e "================================="
 echo -e "Payload SSH Websocket"                                                          
 echo -e "GET / HTTP/1.1[crlf]Host: $domain[crlf]Connection: Keep-Alive[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]"
+echo -e "GET wss://masukan bug [protocol][crlf]Host: $domain[crlf]Upgrade: websocket[crlf][crlf]
 echo -e "================================="
 echo -e "Script Mod By Fauzanvpn"
