@@ -170,7 +170,7 @@ class ConnectionHandler(threading.Thread):
             host = host[:i]
         else:
             if self.method=='CONNECT':
-                port = 2053
+                port = 443
             else:
                 port = sys.argv[1]
 
