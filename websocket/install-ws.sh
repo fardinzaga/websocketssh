@@ -40,7 +40,7 @@ wget -O /etc/systemd/system/ws-maulana.service https://raw.githubusercontent.com
 wget -O /etc/systemd/system/ws-udin.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/service.wsudin && chmod +x /etc/systemd/system/ws-udin.service
 
 #System OpenSSH Websocket-SSH Python
-wget -O /etc/systemd/system/ws-zahara.service
+wget -O /etc/systemd/system/ws-zahara.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/service.wszahara && chmod +x /etc/systemd/system/ws-zahara.service
 
 #System SSL/TLS Websocket-SSH Python
 #wget -O /etc/systemd/system/ws-stunnel.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/ws-stunnel.service && chmod +x /etc/systemd/system/ws-stunnel.service
