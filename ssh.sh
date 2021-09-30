@@ -156,6 +156,10 @@ socket = r:TCP_NODELAY=1
 accept = 443
 connect = 127.0.0.1:97
 
+[ws-stunnel]
+accept = 445
+connect = 127.0.0.1:800
+
 [dropbear]
 accept = 444
 connect = 127.0.0.1:44
@@ -288,7 +292,7 @@ wget -O /usr/local/bin/userdelexpired "https://raw.githubusercontent.com/fardinz
 echo "0 8 * * * root clear-log && reboot" >> /etc/crontab
 echo "0 0 * * * root xp" >> /etc/crontab
 
-#auto reboot server
+#auto reboot server2
 echo "2 0 * * * root clear-log && reboot" >> /etc/crontab
 echo "0 0 * * * root xp" >> /etc/crontab
 
