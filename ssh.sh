@@ -289,8 +289,8 @@ echo "0 8 * * * root clear-log && reboot" >> /etc/crontab
 echo "0 0 * * * root xp" >> /etc/crontab
 
 #auto reboot server2
-echo "2 0 * * * root clear-log && reboot" >> /etc/crontab
-echo "0 0 * * * root xp" >> /etc/crontab
+echo "2 0 * * * root clear-log && reboot" >> /etc/otomatis
+echo "0 0 * * * root xp" >> /etc/otomatis
 
 # remove unnecessary files
 cd
