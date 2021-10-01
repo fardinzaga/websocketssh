@@ -180,6 +180,14 @@ cat key.pem cert.pem >> /etc/stunnel/stunnel.pem
 sed -i 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
 /etc/init.d/stunnel4 restart
 
+#install sslh
+cd
+apt-get install sslh -y
+
+#konfigurasi
+wget -O /etc/default/sslh "https://raw.githubusercontent.com/4hidessh/websocket/main/sslh"
+service sslh restart
+
 #!/bin/bash
 # Proxy For Edukasi, Imclass & gamemax
 # ==============================
