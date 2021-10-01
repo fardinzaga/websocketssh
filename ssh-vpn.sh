@@ -221,7 +221,7 @@ systemctl enable edu-proxy
 systemctl restart edu-proxy
 
 clear
-echo -e Fauzanvpn
+echo -e "Fauzanvpn"
 
 #OpenVPN
 #wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/vpn/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
