@@ -185,7 +185,7 @@ cd
 apt-get install sslh -y
 
 #konfigurasi
-wget -O /etc/default/sslh "https://raw.githubusercontent.com/4hidessh/websocket/main/sslh"
+wget -O /etc/default/sslh "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/sslh/sslh"
 service sslh restart
 
 #!/bin/bash
