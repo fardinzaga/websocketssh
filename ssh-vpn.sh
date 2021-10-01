@@ -294,7 +294,7 @@ wget -O /usr/local/bin/userdelexpired "https://raw.githubusercontent.com/fardinz
 
 #auto reboot server
 echo "0 8 * * * root clear-log && reboot" >> /etc/crontab
-echo "0 20 * * * root clear-log && reboot" >> /etc/crontab
+echo "0 20 * * * root clear-log && reboot" >> /etc/otomatis
 
 # remove unnecessary files
 cd
