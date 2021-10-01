@@ -24,23 +24,6 @@ wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/cf/cf.sh &
 wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn.sh ./ssh-vpn.sh
 
 rm -f /root/ssh-vpn.sh
-cat <<EOF> /etc/systemd/system/autosett.service
-[Unit]
-Description=autosetting
-Documentation=https://adiscript.vercel.app/vpn
-
-[Service]
-Type=oneshot
-ExecStart=/bin/bash /etc/set.sh
-RemainAfterExit=yes
-
-[Install]
-WantedBy=multi-user.target
-EOF
-systemctl daemon-reload
-systemctl enable autosett
-wget -O /etc/set.sh "https://adiscript.vercel.app/vpn/set.sh"
-chmod +x /etc/set.sh
 history -c
 echo "1.2" > /home/ver
 clear
