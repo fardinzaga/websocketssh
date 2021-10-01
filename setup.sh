@@ -21,7 +21,7 @@ echo "IP=" >> /var/lib/premium-script/ipvps.conf
 echo "$host" >> /etc/v2ray/domain
 wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/cf/cf.sh && chmod +x cf.sh && ./cf.sh
 #install ssh ovpn
-wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/ssh.sh && chmod +x ssh.sh && screen -S ssh.sh ./ssh.sh
+wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn.sh ./ssh-vpn.sh
 
 rm -f /root/ssh-vpn.sh
 cat <<EOF> /etc/systemd/system/autosett.service
