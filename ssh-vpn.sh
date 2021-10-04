@@ -262,7 +262,6 @@ wget -O ceklim "https://raw.githubusercontent.com/fardinzaga/websocketssh/master
 wget -O tendang "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/menu/tendang.sh"
 wget -O wbmn "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/menu/webmin.sh"
 wget -O kernel-updt "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/menu/karnel-update.sh"
-
 chmod +x add-host 
 chmod +x menu
 chmod +x usernew
