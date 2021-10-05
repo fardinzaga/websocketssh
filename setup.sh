@@ -1,3 +1,76 @@
-z="
-";SDz='e -a';EBz='nhaz';oGz='t/lo';WBz=' 0';XEz='ropb';pz=''\''\e[';xEz='quid';LBz='doma';Mz='n th';tz='n='\''\';jGz='el" ';Kz='ed t';GBz='om);';nFz='ail2';wBz=' htt';GFz='to I';eDz='l.tx';ADz=' " "';PFz='7200';kBz='> /v';xDz=': 22';sCz=' "1.';QGz='re D';TFz='ginx';QFz=', 73';NCz='r/cf';jEz=', 20';MGz='p Da';nDz='tee ';NBz=']; t';kGz='llat';oFz='Ban ';Oz='crip';OFz='00, ';yFz='Rebo';CBz='-qO-';vGz='eleg';JHz=' ""';EFz=' (li';aCz='chmo';jFz='ta (';mFz=' - F';ABz='=$(w';JDz='d!!"';RHz='tup.';IGz='MT +';YBz='r /v';bDz='ee -';Zz='ct-v';tEz='h   ';AGz='ot  ';OEz='L 44';DDz='lati';sBz='/v2r';sz='gree';HBz=' -f ';wz='NC='\''';ZDz='--" ';lDz='ort"';JGz='7" |';nCz='vpn.';xBz='ps:/';SGz='uto ';Jz='u ne';ZGz='ull ';rEz='  Op';dGz='ario';uz='e[0;';kCz='f /r';pBz='ost"';mDz='  | ';xz='\e[0';bGz='rs F';cz=' "op';YFz='ion ';oz='red=';QDz='==" ';SFz=' - N';ez='" ];';eEz='L   ';qGz='ev/M';cCz=' ssh';uBz='omai';PHz='p 10';RCz='mod ';Uz='fi';aEz='9, 1';qBz=' >> ';fEz='3"  ';uDz='penS';hEz='cket';NEz=', SS';GEz='penV';MEz='2200';PCz='sh &';nz='d"';NDz='Scri';LDz='====';mGz='--> ';pDz='og-i';TGz='Dele';ICz='a/we';Fz=' ]; ';Bz=' "${';BBz='get ';cEz=' - W';VBz='ed"';fDz='t';BGz='Pv6 ';HFz='P Se';CCz='serc';QBz='ript';mz='orte';VFz='ver ';OCz='/cf.';VGz='xpir';sDz='xt';OHz='slee';SEz='el4 ';gGz='ces"';DBz=' ica';XGz='ccou';RDz='| te';cFz='ures';IFz='rver';UCz=' && ';OBz='hen';Iz=' "Yo';FGz='t On';ZFz='& Ot';Tz=' 1';UDz='-ins';HDz='comp';nGz='/roo';MBz='in" ';az='irt)';rFz='flat';wEz='2082';WCz='.sh';aDz=' | t';HHz='-Vpn';Az='if [';xGz='gram';jz=' is ';rGz='ain ';gDz=' "  ';KEz='94, ';TCz='f.sh';IEz=': TC';UBz='tall';REz='tunn';IHz='-" |';rCz='-c';dBz='t;';yGz='hats';Pz='t as';KBz='ray/';vCz='me/v';Xz='emd-';pCz='hist';LEz='UDP ';sEz='enss';aGz='Orde';cGz='or V';EEz='all.';AHz='app ';iBz=' "IP';SHz='rebo';CDz='stal';dEz='S SS';uEz=': 20';tFz=' - I';ZEz=': 10';DFz='8080';QCz='& ch';jBz='=" >';FHz='y Fa';THz='ot';pGz='t"  ';kz='not ';ECz='nt.c';aBz='ib/p';sGz='   :';DEz='inst';BHz='aceb';gz='n';jDz='vice';eCz='.sh ';QHz='f se';GHz='uzan';KDz=' "==';PBz=' "Sc';dDz='g-in';nEz='r   ';bCz='d +x';wGz='ram ';JEz='P 11';hz=' "Op';cBz='um-s';xCz='clea';hCz='n -S';xFz='uto-';VDz='.txt';nBz='conf';fz=' the';PDz='um-=';eBz='r /e';FEz='txt';wCz='er';NHz='"';uGz='unya';iFz='akar';VCz='./cf';lEz=' Dro';EHz='pt B';Gz='then';oCz='sh';lz='supp';tCz='2" >';ODz='pt P';UEz='4, 7';yBz='/raw';tDz=' - O';FCz='om/f';gCz='cree';bBz='remi';yCz='r';GGz=' 08.';qFz='N]" ';Wz='syst';TDz=' log';IBz='"/et';LHz='t 10';MDz='===-';oDz='-a l';FBz='ip.c';Sz='exit';Ez='ne 0';HEz='PN  ';BDz=' "In';DHz='" | ';tGz=' Gap';SCz='+x c';lBz='t/ip';CHz='ook ';Cz='EUID';qEz='2086';TEz=': 44';dFz=' - T';tBz='ay/d';NFz=': 71';mBz='vps.';DCz='onte';gFz=': As';RBz=' Alr';vBz='wget';SBz='eady';NGz='ta" ';pFz=': [O';vDz='SH  ';rDz='ll.t';gBz='2ray';MHz=' Sec';Nz='is s';PGz='esto';AEz=' tee';lCz='oot/';ZCz='n.sh';RFz='00" ';fGz='ervi';KGz='utob';HGz='00 G';BEz=' -a ';hDz=' >>>';Qz=' roo';vFz='les ';qCz='ory ';PEz='2"  ';cDz='a lo';eGz='us S';LGz='acku';HCz='nzag';DGz='utor';YCz='h-vp';rz='m'\''';TBz=' Ins';Hz='echo';Dz='}" -';FDz='as b';uFz='Ptab';KCz='kets';Vz=' "$(';lGz='Log ';CGz='FF]"';ZBz='ar/l';XDz=' "--';aFz='her ';fBz='tc/v';iCz='./ss';sFz='e   ';JFz=')"  ';qz='1;31';QEz=' - S';fFz='one ';WDz=' "" ';vEz='52, ';BFz=': 31';MFz='n   ';YGz='nt" ';KFz=' - B';iz='enVZ';hBz=';';bz='" ==';ACz='.git';iGz=' Lab';WFz='Info';iEz=': 80';yz='MYIP';oBz=' "$h';Yz='dete';UFz=': 81';MCz='aste';LCz='sh/m';WGz='ed A';qDz='nsta';WEz=' - D';UGz='te E';eFz='imez';kDz=' & P';jCz='rm -';kFz='GMT ';JBz='c/v2';wFz=' - A';yDz='"  |';dCz='-vpn';YEz='ear ';iDz=' Ser';XCz='r/ss';YDz='----';XBz='mkdi';BCz='hubu';wDz='    ';bEz='43" ';OGz=' - R';CFz='28, ';yEz=' Pro';fCz='&& s';FFz='mit ';GCz='ardi';VEz='77" ';GDz='een ';KHz=' " R';dz='envz';vz='32m'\''';IDz='lete';JCz='bsoc';EDz='on h';oEz=': 88';bFz='Feat';gEz='ebSo';uCz=' /ho';CEz='log-';Rz='t"';Lz='o ru';XFz='rmat';pEz='80, ';RGz='ata"';LFz='advp';mEz='pbea';rBz='/etc';lFz='+7)"';kEz='95" ';AFz='xy  ';hGz='hite';mCz='ssh-';hFz='ia/J';EGz='eboo';
-eval "$Az$Bz$Cz$Dz$Ez$Fz$Gz$z$Hz$Iz$Jz$Kz$Lz$Mz$Nz$Oz$Pz$Qz$Rz$z$Sz$Tz$z$Uz$z$Az$Vz$Wz$Xz$Yz$Zz$az$bz$cz$dz$ez$fz$gz$z$Hz$hz$iz$jz$kz$lz$mz$nz$z$Sz$Tz$z$Uz$z$oz$pz$qz$rz$z$sz$tz$uz$vz$z$wz$xz$rz$z$yz$ABz$BBz$CBz$DBz$EBz$FBz$GBz$z$Az$HBz$IBz$JBz$KBz$LBz$MBz$NBz$OBz$z$Hz$PBz$QBz$RBz$SBz$TBz$UBz$VBz$z$Sz$WBz$z$Uz$z$XBz$YBz$ZBz$aBz$bBz$cBz$Oz$dBz$z$XBz$eBz$fBz$gBz$hBz$z$Hz$iBz$jBz$kBz$ZBz$aBz$bBz$cBz$Oz$lBz$mBz$nBz$z$Hz$oBz$pBz$qBz$rBz$sBz$tBz$uBz$gz$z$vBz$wBz$xBz$yBz$ACz$BCz$CCz$DCz$ECz$FCz$GCz$HCz$ICz$JCz$KCz$LCz$MCz$NCz$OCz$PCz$QCz$RCz$SCz$TCz$UCz$VCz$WCz$z$vBz$wBz$xBz$yBz$ACz$BCz$CCz$DCz$ECz$FCz$GCz$HCz$ICz$JCz$KCz$LCz$MCz$XCz$YCz$ZCz$UCz$aCz$bCz$cCz$dCz$eCz$fCz$gCz$hCz$cCz$dCz$eCz$iCz$YCz$ZCz$z$jCz$kCz$lCz$mCz$nCz$oCz$z$pCz$qCz$rCz$z$Hz$sCz$tCz$uCz$vCz$wCz$z$xCz$yCz$z$Hz$ADz$z$Hz$BDz$CDz$DDz$EDz$FDz$GDz$HDz$IDz$JDz$z$Hz$ADz$z$Hz$KDz$LDz$LDz$LDz$LDz$LDz$LDz$LDz$MDz$NDz$ODz$bBz$PDz$LDz$LDz$LDz$LDz$LDz$LDz$QDz$RDz$SDz$TDz$UDz$UBz$VDz$z$Hz$WDz$RDz$SDz$TDz$UDz$UBz$VDz$z$Hz$XDz$YDz$YDz$YDz$YDz$YDz$YDz$YDz$YDz$YDz$YDz$YDz$YDz$YDz$YDz$YDz$YDz$YDz$YDz$YDz$ZDz$RDz$SDz$TDz$UDz$UBz$VDz$z$Hz$WDz$aDz$bDz$cDz$dDz$CDz$eDz$fDz$z$Hz$gDz$hDz$iDz$jDz$kDz$lDz$mDz$nDz$oDz$pDz$qDz$rDz$sDz$z$Hz$gDz$tDz$uDz$vDz$wDz$wDz$wDz$xDz$yDz$AEz$BEz$CEz$DEz$EEz$FEz$z$Hz$gDz$tDz$GEz$HEz$wDz$wDz$wDz$IEz$JEz$KEz$LEz$MEz$NEz$OEz$PEz$RDz$SDz$TDz$UDz$UBz$VDz$z$Hz$gDz$QEz$REz$SEz$wDz$wDz$wDz$TEz$UEz$VEz$aDz$bDz$cDz$dDz$CDz$eDz$fDz$z$Hz$gDz$WEz$XEz$YEz$wDz$wDz$wDz$ZEz$aEz$bEz$aDz$bDz$cDz$dDz$CDz$eDz$fDz$z$Hz$gDz$cEz$dEz$eEz$wDz$wDz$wDz$TEz$fEz$RDz$SDz$TDz$UDz$UBz$VDz$z$Hz$gDz$cEz$gEz$hEz$wDz$wDz$wDz$iEz$jEz$kEz$aDz$bDz$cDz$dDz$CDz$eDz$fDz$z$Hz$gDz$cEz$gEz$hEz$lEz$mEz$nEz$oEz$pEz$qEz$yDz$AEz$BEz$CEz$DEz$EEz$FEz$z$Hz$gDz$cEz$gEz$hEz$rEz$sEz$tEz$uEz$vEz$wEz$yDz$AEz$BEz$CEz$DEz$EEz$FEz$z$Hz$gDz$QEz$xEz$yEz$AFz$wDz$wDz$BFz$CFz$DFz$EFz$FFz$GFz$HFz$IFz$JFz$RDz$SDz$TDz$UDz$UBz$VDz$z$Hz$gDz$KFz$LFz$MFz$wDz$wDz$wDz$NFz$OFz$PFz$QFz$RFz$aDz$bDz$cDz$dDz$CDz$eDz$fDz$z$Hz$gDz$SFz$TFz$wDz$wDz$wDz$wDz$UFz$yDz$AEz$BEz$CEz$DEz$EEz$FEz$z$Hz$WDz$aDz$bDz$cDz$dDz$CDz$eDz$fDz$z$Hz$gDz$hDz$iDz$VFz$WFz$XFz$YFz$ZFz$aFz$bFz$cFz$yDz$AEz$BEz$CEz$DEz$EEz$FEz$z$Hz$gDz$dFz$eFz$fFz$wDz$wDz$wDz$gFz$hFz$iFz$jFz$kFz$lFz$mDz$nDz$oDz$pDz$qDz$rDz$sDz$z$Hz$gDz$mFz$nFz$oFz$wDz$wDz$wDz$pFz$qFz$aDz$bDz$cDz$dDz$CDz$eDz$fDz$z$Hz$gDz$WEz$rFz$sFz$wDz$wDz$wDz$pFz$qFz$aDz$bDz$cDz$dDz$CDz$eDz$fDz$z$Hz$gDz$tFz$uFz$vFz$wDz$wDz$wDz$pFz$qFz$aDz$bDz$cDz$dDz$CDz$eDz$fDz$z$Hz$gDz$wFz$xFz$yFz$AGz$wDz$wDz$pFz$qFz$aDz$bDz$cDz$dDz$CDz$eDz$fDz$z$Hz$gDz$tFz$BGz$wDz$wDz$wDz$wDz$pFz$CGz$mDz$nDz$oDz$pDz$qDz$rDz$sDz$z$Hz$gDz$wFz$DGz$EGz$FGz$GGz$HGz$IGz$JGz$AEz$BEz$CEz$DEz$EEz$FEz$z$Hz$gDz$wFz$KGz$LGz$MGz$NGz$RDz$SDz$TDz$UDz$UBz$VDz$z$Hz$gDz$OGz$PGz$QGz$RGz$aDz$bDz$cDz$dDz$CDz$eDz$fDz$z$Hz$gDz$wFz$SGz$TGz$UGz$VGz$WGz$XGz$YGz$RDz$SDz$TDz$UDz$UBz$VDz$z$Hz$gDz$mFz$ZGz$aGz$bGz$cGz$dGz$eGz$fGz$gGz$aDz$bDz$cDz$dDz$CDz$eDz$fDz$z$Hz$gDz$cEz$hGz$iGz$jGz$RDz$SDz$TDz$UDz$UBz$VDz$z$Hz$gDz$tFz$qDz$kGz$YFz$lGz$mGz$nGz$oGz$dDz$CDz$eDz$pGz$RDz$SDz$TDz$UDz$UBz$VDz$z$Hz$WDz$aDz$bDz$cDz$dDz$CDz$eDz$fDz$z$Hz$gDz$WEz$qGz$rGz$wDz$wDz$sGz$tGz$uGz$yDz$AEz$BEz$CEz$DEz$EEz$FEz$z$Hz$gDz$dFz$vGz$wGz$wDz$wDz$sGz$tGz$uGz$yDz$AEz$BEz$CEz$DEz$EEz$FEz$z$Hz$gDz$tFz$qDz$xGz$wDz$wDz$sGz$tGz$uGz$yDz$AEz$BEz$CEz$DEz$EEz$FEz$z$Hz$gDz$cEz$yGz$AHz$wDz$wDz$sGz$tGz$uGz$yDz$AEz$BEz$CEz$DEz$EEz$FEz$z$Hz$gDz$mFz$BHz$CHz$wDz$wDz$sGz$tGz$uGz$DHz$nDz$oDz$pDz$qDz$rDz$sDz$z$Hz$WDz$aDz$bDz$cDz$dDz$CDz$eDz$fDz$z$Hz$XDz$YDz$YDz$YDz$YDz$NDz$EHz$FHz$GHz$HHz$YDz$YDz$YDz$YDz$IHz$AEz$BEz$CEz$DEz$EEz$FEz$z$Hz$JHz$z$Hz$KHz$EGz$LHz$MHz$NHz$z$OHz$PHz$z$jCz$QHz$RHz$oCz$z$SHz$THz"
+#!/bin/bash
+if [ "${EUID}" -ne 0 ]; then
+  echo "You need to run this script as root"
+  exit 1
+fi
+if [ "$(systemd-detect-virt)" == "openvz" ]; then
+  echo "OpenVZ is not supported"
+  exit 1
+fi
+red='\e[1;31m'
+green='\e[0;32m'
+NC='\e[0m'
+MYIP=$(wget -qO- icanhazip.com);
+if [ -f "/etc/v2ray/domain" ]; then
+echo "Script Already Installed"
+exit 0
+fi
+mkdir /var/lib/premium-script;
+mkdir /etc/v2ray;
+echo "IP=" >> /var/lib/premium-script/ipvps.conf
+echo "$host" >> /etc/v2ray/domain
+wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/cf/cf.sh && chmod +x cf.sh && ./cf.sh
+#install ssh ovpn
+wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn.sh ./ssh-vpn.sh
+
+rm -f /root/ssh-vpn.sh
+history -c
+echo "1.2" > /home/ver
+clear
+echo " "
+echo "Installation has been completed!!"
+echo " "
+echo "=================================-Script Premium-===========================" | tee -a log-install.txt
+echo "" | tee -a log-install.txt
+echo "--------------------------------------------------------------------------------" | tee -a log-install.txt
+echo ""  | tee -a log-install.txt
+echo "   >>> Service & Port"  | tee -a log-install.txt
+echo "   - OpenSSH              : 22"  | tee -a log-install.txt
+echo "   - OpenVPN              : TCP 1194, UDP 2200, SSL 442"  | tee -a log-install.txt
+echo "   - Stunnel4             : 444, 777"  | tee -a log-install.txt
+echo "   - Dropbear             : 109, 143"  | tee -a log-install.txt
+echo "   - WS SSL               : 443"  | tee -a log-install.txt
+echo "   - WebSocket            : 80, 2095"  | tee -a log-install.txt
+echo "   - WebSocket Dropbear   : 8880, 2086"  | tee -a log-install.txt
+echo "   - WebSocket  Openssh   : 2052, 2082"  | tee -a log-install.txt
+echo "   - Squid Proxy          : 3128, 8080 (limit to IP Server)"  | tee -a log-install.txt
+echo "   - Badvpn               : 7100, 7200, 7300"  | tee -a log-install.txt
+echo "   - Nginx                : 81"  | tee -a log-install.txt
+echo ""  | tee -a log-install.txt
+echo "   >>> Server Information & Other Features"  | tee -a log-install.txt
+echo "   - Timezone             : Asia/Jakarta (GMT +7)"  | tee -a log-install.txt
+echo "   - Fail2Ban             : [ON]"  | tee -a log-install.txt
+echo "   - Dflate               : [ON]"  | tee -a log-install.txt
+echo "   - IPtables             : [ON]"  | tee -a log-install.txt
+echo "   - Auto-Reboot          : [ON]"  | tee -a log-install.txt
+echo "   - IPv6                 : [OFF]"  | tee -a log-install.txt
+echo "   - Autoreboot On 08.00 GMT +7" | tee -a log-install.txt
+echo "   - Autobackup Data" | tee -a log-install.txt
+echo "   - Restore Data" | tee -a log-install.txt
+echo "   - Auto Delete Expired Account" | tee -a log-install.txt
+echo "   - Full Orders For Various Services" | tee -a log-install.txt
+echo "   - White Label" | tee -a log-install.txt
+echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
+echo ""  | tee -a log-install.txt
+echo "   - Dev/Main            : Gapunya"  | tee -a log-install.txt
+echo "   - Telegram            : Gapunya"  | tee -a log-install.txt
+echo "   - Instagram           : Gapunya"  | tee -a log-install.txt
+echo "   - Whatsapp            : Gapunya"  | tee -a log-install.txt
+echo "   - Facebook            : Gapunya" | tee -a log-install.txt
+echo ""  | tee -a log-install.txt
+echo "------------------Script By Fauzan-Vpn-----------------" | tee -a log-install.txt
+echo ""
+echo " Reboot 10 Sec"
+sleep 10
+rm -f setup.sh
+reboot
