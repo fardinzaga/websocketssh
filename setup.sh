@@ -1,76 +1,39 @@
-#!/bin/bash
-if [ "${EUID}" -ne 0 ]; then
-  echo "You need to run this script as root"
-  exit 1
-fi
-if [ "$(systemd-detect-virt)" == "openvz" ]; then
-  echo "OpenVZ is not supported"
-  exit 1
-fi
-red='\e[1;31m'
-green='\e[0;32m'
-NC='\e[0m'
-MYIP=$(wget -qO- icanhazip.com);
-if [ -f "/etc/v2ray/domain" ]; then
-echo "Script Already Installed"
-exit 0
-fi
-mkdir /var/lib/premium-script;
-mkdir /etc/v2ray;
-echo "IP=" >> /var/lib/premium-script/ipvps.conf
-echo "$host" >> /etc/v2ray/domain
-wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/cf/cf.sh && chmod +x cf.sh && ./cf.sh
-#install ssh ovpn
-wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn.sh ./ssh-vpn.sh
-
-rm -f /root/ssh-vpn.sh
-history -c
-echo "1.2" > /home/ver
-clear
-echo " "
-echo "Installation has been completed!!"
-echo " "
-echo "=================================-Script Premium-===========================" | tee -a log-install.txt
-echo "" | tee -a log-install.txt
-echo "--------------------------------------------------------------------------------" | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "   >>> Service & Port"  | tee -a log-install.txt
-echo "   - OpenSSH              : 22"  | tee -a log-install.txt
-echo "   - OpenVPN              : TCP 1194, UDP 2200, SSL 442"  | tee -a log-install.txt
-echo "   - Stunnel4             : 444, 777"  | tee -a log-install.txt
-echo "   - Dropbear             : 109, 143"  | tee -a log-install.txt
-echo "   - WS SSL               : 443"  | tee -a log-install.txt
-echo "   - WebSocket            : 80, 2095"  | tee -a log-install.txt
-echo "   - WebSocket Dropbear   : 8880, 2086"  | tee -a log-install.txt
-echo "   - WebSocket  Openssh   : 2052, 2082"  | tee -a log-install.txt
-echo "   - Squid Proxy          : 3128, 8080 (limit to IP Server)"  | tee -a log-install.txt
-echo "   - Badvpn               : 7100, 7200, 7300"  | tee -a log-install.txt
-echo "   - Nginx                : 81"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "   >>> Server Information & Other Features"  | tee -a log-install.txt
-echo "   - Timezone             : Asia/Jakarta (GMT +7)"  | tee -a log-install.txt
-echo "   - Fail2Ban             : [ON]"  | tee -a log-install.txt
-echo "   - Dflate               : [ON]"  | tee -a log-install.txt
-echo "   - IPtables             : [ON]"  | tee -a log-install.txt
-echo "   - Auto-Reboot          : [ON]"  | tee -a log-install.txt
-echo "   - IPv6                 : [OFF]"  | tee -a log-install.txt
-echo "   - Autoreboot On 08.00 GMT +7" | tee -a log-install.txt
-echo "   - Autobackup Data" | tee -a log-install.txt
-echo "   - Restore Data" | tee -a log-install.txt
-echo "   - Auto Delete Expired Account" | tee -a log-install.txt
-echo "   - Full Orders For Various Services" | tee -a log-install.txt
-echo "   - White Label" | tee -a log-install.txt
-echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "   - Dev/Main            : Gapunya"  | tee -a log-install.txt
-echo "   - Telegram            : Gapunya"  | tee -a log-install.txt
-echo "   - Instagram           : Gapunya"  | tee -a log-install.txt
-echo "   - Whatsapp            : Gapunya"  | tee -a log-install.txt
-echo "   - Facebook            : Gapunya" | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "------------------Script By Fauzan-Vpn-----------------" | tee -a log-install.txt
-echo ""
-echo " Reboot 10 Sec"
-sleep 10
-rm -f setup.sh
-reboot
+^?ELF^B^A^A^@^@^@^@^@^@^@^@^@^C^@�^@^A^@^@^@P^K^@^@^@^@^@^@@^@^@^@^@^@>
+^@^@^@^Q^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@�^@^@^@^R^@^@^@^@^@^@^@^>
+^E^@^@^@^B^@�^@^@^@^@^@^@^@�/^@^@^@^@^@^@^C^D^@^@^@^@^@^@�^U^@^@^@^@^@>
+^@^@^@^@^@^@^@^@^@^@^@H/^@^@^@^@^@^@^B^D^@^@^K^@^@^@^@^@^@^@^@^@^@^@P/>
+^@^@^@^@^@^@^@^@^@^@^@`/^@^@^@^@^@^@^B^D^@^@^N^@^@^@^@^@^@^@^@^@^@^@h/>
+^@^@�J�G�^@^Ag� ^]^XN�^C�=�^K^@�^B^@^@�B�G��^C^@��^C^_���^@�����@^@^@�>
+�(^A^@9
+^@^@�H�I9^H^E^@^Q�^C^H*I�       9^H^]^@^RH��5�^C_���^@��^O^@��^W^@��^O>
+^@^@�H�I9^H^A^L^KH�     9�^G@�l�I9�^W@��
+�^Z�}^N^[�^A
+k^L�l8H�I9^H^A^L^KH�    9H�I9(^A^H�^H^A@9k�I9+^A^K�h^A^@9�O@9J�I9)^A
+�(^A^@9
+^@^@�H�I9^H^E^@^Q�^C^H*I�       9^H^]^@^RH��5�^G@�^H^A^D��^G^@��^W@�^H>
+*�^C^H�J^A^L�J^A@9,�I9�^C^L*�^C^H��^A
+��^A^@9�O@9k�I9�^C^K*�^C^H�k^A^L�j^A^@9)�I9
+ii8�O@9)^A
+^K�O^@9�O@9
+ii8�^G@�(^A@9^H^A
+J(^A^@9�^G@�^H^E^@��^G^@��^W@�^H^E^@q�^W^@����^W��^@��^C_��^C^E��{^R��>
+k)^E^@q^A�)�|�����_��C@�^H^A    k^H^E^@^Q��^_�^C^@^@^T^H^@�^R��^_���_�>
+^A��^C^[�^He^A���^[��C^_���^^���^�^H^A@��^C^\��^C\��^@^@�^@^@^@�^@^H^[>
+*k^E^@^Q�C^]�)
+�(^A^@���]��^A^@4�^W@�^H^EA9(^A^@4�^CZ���\��C���^C
+*k^E^@^Q�C^]�)
+�(^A^@��^W@�^H5G9(^A^@4�'@���\��C���^C
+*k^E^@^Q�C^]�)
+�(^A^@��^W@��^C^���\��C���^C^K*�^E^@^Q�C^]�J
+^K�I^A^@�^H�H9(^A^@4�/@���\��C���^C
+*k^E^@^Q�C^]�)
+�(^A^@���]�^H^E^@q�^@^@T��]��^O^@�^C^@^@^T�^C^_*�^O^@��^O@���^]���]��C>
+*k^E^@^Q�C^]�)
+�(^A^@����^W�#@���\��C��^H
+        �^_^A^@���\�6����#@���^_���_��{N���^C��^C_��C^A��{^D��^C^A���^>
+^@@�    ^@^@�)�^[�^H^@^@�^H�^[�J^A^@q^H^Q����^^�����^H^@@��^@^@4����^@>
+^@: ^@<null>^@^@^A^[^C;P^@^@^@  ^@^@^@����h^@^@^@0���|^@^@^@^P����^@^@>
+^@^@^@^@^@^@^@�^@^@^@^@^@^@^@^K^@^@^@^@^@^@^@^X^@^@^@^@^@^@^@^U^@^@^@^>
+^?X�^N7z}۲d��y^Z�f&�^Rf^N)"(>;^GjF�!^H��Zp,�Z�^P^R5^_�ZmX ^U�.?�W} _�f>
+��-W7����^R=^W��@}����F^^L�rH�^[�x)b^NV�FOS&^Ofc&Jag�^X�K�2��^T^\C�8
++bl:�%�^Hy�^X�^K?*l����=s��m�^E��=���'�XMta�^[y�'�ѓ^�^W�^B�������^]o��>
