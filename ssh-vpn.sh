@@ -288,7 +288,13 @@ wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/websocket/
 echo "================  Auto deleted Account Expired ======================"
 wget -O /usr/local/bin/userdelexpired "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/userdelexpired" && chmod +x /usr/local/bin/userdelexpired
 
-echo "0 */08 * * * root clear-log && reboot" >> /etc/crontab
+#auto reboot server
+echo "0 0 * * * root clear-log && reboot" >> /etc/crontab
+echo "0 0 * * * root xp" >> /etc/crontab
+
+#auto reboot server2
+echo "0 */08 * * * root clear-log && reboot" >> /etc/otomatis
+echo "0 0 * * * root xp" >> /etc/otomatis
 
 # remove unnecessary files
 cd
