@@ -1,6 +1,6 @@
 #!/bin/bash
 # By Fauzanvpn
-# Tunneling SSH Websocket + Stunnel + SSLH
+#
 # ==================================================
 
 # initializing var
@@ -20,7 +20,6 @@ organizationalunit=fauzanvpn.com
 commonname=fauzanvpn.com
 email=admin@fauzanvpn.com
 
-cd
 # common password debian 
 wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/password/common-password-deb9"
 chmod +x /etc/pam.d/common-password
@@ -143,6 +142,23 @@ apt -y install squid3
 wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/squid/squid3.conf"
 sed -i $MYIP2 /etc/squid/squid.conf
 
+# setting vnstat
+apt -y install vnstat
+/etc/init.d/vnstat restart
+apt -y install libsqlite3-dev
+wget https://humdi.net/vnstat/vnstat-2.6.tar.gz
+tar zxvf vnstat-2.6.tar.gz
+cd vnstat-2.6
+./configure --prefix=/usr --sysconfdir=/etc && make && make install
+cd
+vnstat -u -i $NET
+sed -i 's/Interface "'""eth0""'"/Interface "'""$NET""'"/g' /etc/vnstat.conf
+chown vnstat:vnstat /var/lib/vnstat -R
+systemctl enable vnstat
+/etc/init.d/vnstat restart
+rm -f /root/vnstat-2.6.tar.gz
+rm -rf /root/vnstat-2.6
+
 # install stunnel
 apt install stunnel4 -y
 cat > /etc/stunnel/stunnel.conf <<-END
@@ -225,6 +241,33 @@ wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/vpn/vpn.sh
 # install fail2ban
 apt -y install fail2ban
 
+# Instal DDOS Flate
+if [ -d '/usr/local/ddos' ]; then
+	echo; echo; echo "Please un-install the previous version first"
+	exit 0
+else
+	mkdir /usr/local/ddos
+fi
+clear
+echo; echo 'Installing DOS-Deflate 0.6'; echo
+echo; echo -n 'Downloading source files...'
+wget -q -O /usr/local/ddos/ddos.conf http://www.inetbase.com/scripts/ddos/ddos.conf
+echo -n '.'
+wget -q -O /usr/local/ddos/LICENSE http://www.inetbase.com/scripts/ddos/LICENSE
+echo -n '.'
+wget -q -O /usr/local/ddos/ignore.ip.list http://www.inetbase.com/scripts/ddos/ignore.ip.list
+echo -n '.'
+wget -q -O /usr/local/ddos/ddos.sh http://www.inetbase.com/scripts/ddos/ddos.sh
+chmod 0755 /usr/local/ddos/ddos.sh
+cp -s /usr/local/ddos/ddos.sh /usr/local/sbin/ddos
+echo '...done'
+echo; echo -n 'Creating cron to run script every minute.....(Default setting)'
+/usr/local/ddos/ddos.sh --cron > /dev/null 2>&1
+echo '.....done'
+echo; echo 'Installation has completed.'
+echo 'Config file is at /usr/local/ddos/ddos.conf'
+echo 'Please send in your comments and/or suggestions to zaf@vsnl.com'
+
 # Custom Banner SSH
 echo "================  Banner ======================"
 wget -O /etc/issue.net "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/banner/banner-custom.conf"
@@ -280,22 +323,10 @@ chmod +x ram
 chmod +x renew
 chmod +x wbmn
 chmod +x kernel-updt
-
-#install websocker SSH dan Dropbear
-wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/websocket/install-ws.sh && chmod +x install-ws.sh && ./install-ws.sh
-
-# Delete Acount SSH Expired
-echo "================  Auto deleted Account Expired ======================"
-wget -O /usr/local/bin/userdelexpired "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/userdelexpired" && chmod +x /usr/local/bin/userdelexpired
-
-#auto reboot server
 echo "0 0 * * * root clear-log && reboot" >> /etc/crontab
 echo "0 0 * * * root xp" >> /etc/crontab
-
-#auto reboot server2
 echo "0 */8 * * * root clear-log && reboot" >> /etc/otomatis
 echo "0 0 * * * root xp" >> /etc/otomatis
-
 # remove unnecessary files
 cd
 apt autoclean -y
@@ -315,28 +346,18 @@ chown -R www-data:www-data /home/vps/public_html
 /etc/init.d/dropbear restart
 /etc/init.d/fail2ban restart
 /etc/init.d/stunnel4 restart
+/etc/init.d/vnstat restart
 /etc/init.d/squid restart
 screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7100 --max-clients 500
 screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7200 --max-clients 500
 screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7300 --max-clients 500
-
 history -c
 echo "unset Fauzanvpn" >> /etc/profile
 
-#hapus file
 cd
+rm -f /root/key.pem
+rm -f /root/cert.pem
 rm -f /root/ssh-vpn.sh
-
-apt install dnsutils jq -y
-apt-get install net-tools -y
-apt-get install tcpdump -y
-apt-get install dsniff -y
-apt install grepcidr -y
-# Instal DDOS Flate
-wget https://github.com/jgmdev/ddos-deflate/archive/master.zip -O ddos.zip
-unzip ddos.zip
-cd ddos-deflate-master
-./install.sh
 
 # finihsing
 clear
