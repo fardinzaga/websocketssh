@@ -323,10 +323,17 @@ chmod +x ram
 chmod +x renew
 chmod +x wbmn
 chmod +x kernel-updt
-echo "0 0 * * * root clear-log && reboot" >> /etc/crontab
+
+#install websocker SSH dan Dropbear
+wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/websocket/install-ws.sh && chmod +x install-ws.sh && ./install-ws.sh
+
+# Delete Acount SSH Expired
+echo "================  Auto deleted Account Expired ======================"
+wget -O /usr/local/bin/userdelexpired "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/userdelexpired" && chmod +x /usr/local/bin/userdelexpired
+
+echo "0 8 * * * root clear-log && reboot" >> /etc/crontab
 echo "0 0 * * * root xp" >> /etc/crontab
-echo "0 */8 * * * root clear-log && reboot" >> /etc/otomatis
-echo "0 0 * * * root xp" >> /etc/otomatis
+
 # remove unnecessary files
 cd
 apt autoclean -y
