@@ -62,7 +62,7 @@ echo "   - Full Orders For Various Services" | tee -a log-install.txt
 echo "   - White Label" | tee -a log-install.txt
 echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "   - Dev/Main            : Gapunya"  | tee -a log-install.txt
+echo "   - Dev/Main            : FauzanVpn"  | tee -a log-install.txt
 echo "   - Telegram            : Gapunya"  | tee -a log-install.txt
 echo "   - Instagram           : Gapunya"  | tee -a log-install.txt
 echo "   - Whatsapp            : Gapunya"  | tee -a log-install.txt
