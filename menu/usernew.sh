@@ -21,10 +21,10 @@ IP=$(wget -qO- icanhazip.com);
 domain=$(cat /etc/v2ray/domain)
 ssl="$(cat ~/log-install.txt | grep -w "Stunnel4" | cut -d: -f2)"
 sqd="$(cat ~/log-install.txt | grep -w "Squid" | cut -d: -f2)"
-wsl="$(cat ~/log-install.txt | grep -w "ws" | cut -d: -f2)"
-web="$(cat ~/log-install.txt | grep -w "websocket" | cut -d: -f2)"
-wsd="$(cat ~/log-install.txt | grep -w "websocket" | cut -d: -f2)"
-wso="$(cat ~/log-install.txt | grep -w "Squid" | cut -d: -f2)"
+wsl="$(cat ~/log-install.txt | grep -w "Ws" | cut -d: -f2)"
+web="$(cat ~/log-install.txt | grep -w "Websocket" | cut -d: -f2)"
+wsd="$(cat ~/log-install.txt | grep -w "WsDropbear" | cut -d: -f2)"
+wso="$(cat ~/log-install.txt | grep -w "WsOpenssh" | cut -d: -f2)"
 ovpn="$(netstat -nlpt | grep -i openvpn | grep -i 0.0.0.0 | awk '{print $4}' | cut -d: -f2)"
 ovpn2="$(netstat -nlpu | grep -i openvpn | grep -i 0.0.0.0 | awk '{print $4}' | cut -d: -f2)"
 sleep 1
