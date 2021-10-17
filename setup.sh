@@ -35,9 +35,9 @@ echo "" | tee -a log-install.txt
 echo "--------------------------------------------------------------------------------" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   >>> Service & Port"  | tee -a log-install.txt
-echo "   - OpenSSH              : 22"  | tee -a log-install.txt
+echo "   - OpenSSH              : 22, 777"  | tee -a log-install.txt
 echo "   - OpenVPN              : TCP 1194, UDP 2200, SSL 442"  | tee -a log-install.txt
-echo "   - Stunnel4             : 444, 777"  | tee -a log-install.txt
+echo "   - Stunnel4             : 444"  | tee -a log-install.txt
 echo "   - Dropbear             : 109, 143"  | tee -a log-install.txt
 echo "   - WS SSL               : 443"  | tee -a log-install.txt
 echo "   - WebSocket            : 80, 2095"  | tee -a log-install.txt
