@@ -51,7 +51,7 @@ echo "   - Ws SSL/TLS           : 443, 445"  | tee -a log-install.txt
 echo "   - WebSocket            : 80, 2095"  | tee -a log-install.txt
 echo "   - WsDropbear           : 8880, 2086"  | tee -a log-install.txt
 echo "   - WsOpenssh            : 2052, 2082"  | tee -a log-install.txt
-echo "   - WsOvpn               : 2095"  | tee -a log-install.txt
+echo "   - WsOvpn               : 2096"  | tee -a log-install.txt
 echo "   - Squid Proxy          : 3128, 8080 (limit to IP Server)"  | tee -a log-install.txt
 echo "   - Badvpn               : 7100, 7200, 7300"  | tee -a log-install.txt
 echo "   - Nginx                : 81"  | tee -a log-install.txt
