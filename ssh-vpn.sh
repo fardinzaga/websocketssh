@@ -114,7 +114,6 @@ cd
 sed -i 's/#Port 22/Port 22/g' /etc/ssh/sshd_config
 sed -i '/Port 22/a Port 88' /etc/ssh/sshd_config
 sed -i '/Port 22/a Port 200' /etc/ssh/sshd_config
-sed -i '/Port 22/a Port 467' /etc/ssh/sshd_config
 sed -i '/Port 22/a Port 5000' /etc/ssh/sshd_config
 sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
 /etc/init.d/ssh restart
@@ -164,18 +163,19 @@ client = no
 socket = a:SO_REUSEADDR=1
 socket = l:TCP_NODELAY=1
 socket = r:TCP_NODELAY=1
+
 [ws-stunnel]
 accept = 443
 connect = 127.0.0.1:97
-[ws-stunnel]
-accept = 2087
-connect = 127.0.0.1:87
+
 [dropbear]
 accept = 444
 connect = 127.0.0.1:44
+
 [dropbear]
 accept = 777
 connect = 127.0.0.1:22
+
 [openvpn]
 accept = 992
 connect = 127.0.0.1:1194
