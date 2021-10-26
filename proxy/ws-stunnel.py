@@ -13,7 +13,7 @@ PASS = ''
 # CONST
 BUFLEN = 4096 * 4
 TIMEOUT = 60
-DEFAULT_HOST = '127.0.0.1:5000'
+DEFAULT_HOST = '127.0.0.1:765'
 RESPONSE = 'HTTP/1.1 101 <b><font color="red">SETUP BY FAUZAN-VPN</b></font>\r\nContent-Length: 104857600000\r\n\r\n'
 
 class Server(threading.Thread):
@@ -170,7 +170,7 @@ class ConnectionHandler(threading.Thread):
             host = host[:i]
         else:
             if self.method=='CONNECT':
-                port = 2087
+                port = 443
             else:
                 port = sys.argv[1]
 
