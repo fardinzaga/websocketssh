@@ -42,10 +42,10 @@ wget -O /etc/systemd/system/ws-udin.service https://raw.githubusercontent.com/fa
 #System OpenSSH Websocket-SSH Python
 wget -O /etc/systemd/system/ws-zahara.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/service.wszahara && chmod +x /etc/systemd/system/ws-zahara.service
 
-#System Websocket-OpenVPN Python
-#wget -O /etc/systemd/system/ws-stunnel.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/ws-stunnel.service && chmod +x /etc/systemd/system/ws-stunnel.service
+#System SSL/TLS Websocket-SSH Python
+#wget -O /etc/systemd/system/ws-stunnel.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/ws-ovpn.service && chmod +x /etc/systemd/system/ws-ovpn.service
 
-##System SSL/TLS Websocket-SSH Python
+##System Websocket-OpenVPN Python
 #wget -O /etc/systemd/system/ws-ovpn.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/ws-ovpn.service && chmod +x /etc/systemd/system/ws-ovpn.service
 
 #restart service
@@ -81,12 +81,12 @@ systemctl enable ws-zahara.service
 systemctl start ws-zahara.service
 systemctl restart ws-zahara.service
 
+Enable & Start ws-ovpn service
+systemctl enable ws-ovpn.service
+systemctl start ws-ovpn.service
+systemctl restart ws-ovpn.service
+
 #Enable & Start & Restart ws-stunnel service
 #systemctl enable ws-stunnel.service
 #systemctl start ws-stunnel.service
 #systemctl restart ws-stunnel.service
-
-#Enable & Start ws-ovpn service
-#systemctl enable ws-ovpn.service
-#systemctl start ws-ovpn.service
-#systemctl restart ws-ovpn.service
