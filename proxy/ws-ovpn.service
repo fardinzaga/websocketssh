@@ -1,3 +1,7 @@
+# /usr/local/bin/ws-dropbear
+# /usr/local/bin/ws-openssh
+# /usr/local/bin/ws-stunnel
+# /usr/local/bin/ws-ovpn
 [Unit]
 Description=SSH Over Websocket Python Fauzanvpn
 Documentation=https://google.com
