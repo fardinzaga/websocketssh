@@ -11,8 +11,8 @@ wget -O /usr/local/bin/ws-fauzanvpn https://raw.githubusercontent.com/fardinzaga
 wget -O /usr/local/bin/ws-maulana https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/maulana-ws.py
 wget -O /usr/local/bin/ws-udin https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/udin-ws.py
 wget -O /usr/local/bin/ws-zahara https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/zahara-ws.py
-wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/ws-stunnel && chmod +x /usr/local/bin/ws-stunnel
-wget -O /usr/local/bin/ws-ovpn https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/ws-ovpn && chmod +x /usr/local/bin/ws-ovpn
+wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/ws-stunnel.py && chmod +x /usr/local/bin/ws-stunnel.py
+wget -O /usr/local/bin/ws-ovpn https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/ws-ovpn.py && chmod +x /usr/local/bin/ws-ovpn.py
 
 #izin permision
 chmod +x /usr/local/bin/ws-openssh
