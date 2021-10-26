@@ -43,10 +43,10 @@ wget -O /etc/systemd/system/ws-udin.service https://raw.githubusercontent.com/fa
 wget -O /etc/systemd/system/ws-zahara.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/service.wszahara && chmod +x /etc/systemd/system/ws-zahara.service
 
 #System Websocket-OpenVPN Python
-wget -O /etc/systemd/system/ws-stunnel.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/ws-ovpn.service && chmod +x /etc/systemd/system/ws-ovpn.service
+wget -O /etc/systemd/system/ws-ovpn.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/ws-ovpn.service && chmod +x /etc/systemd/system/ws-ovpn.service
 
 ##System SSL/TLS Websocket-SSH Python
-#wget -O /etc/systemd/system/ws-ovpn.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/ws-stunnel && chmod +x /etc/systemd/system/ws-ovpn.service
+#wget -O /etc/systemd/system/ws-stunnel.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/ws-stunnel && chmod +x /etc/systemd/system/ws-ovpn.service
 
 #restart service
 #
