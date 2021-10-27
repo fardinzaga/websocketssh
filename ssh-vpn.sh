@@ -339,6 +339,9 @@ chmod +x renew
 chmod +x wbmn
 chmod +x kernel-updt
 
+#install websocker SSH dan Dropbear
+wget https://raw.githubusercontent.com/4hidessh/hidessh/main/webscoket/install-ws.sh && chmod +x install-ws.sh && ./install-ws.sh
+
 # Delete Acount SSH Expired
 echo "================  Auto deleted Account Expired ======================"
 wget -O /usr/local/bin/userdelexpired "https://raw.githubusercontent.com/fardinzaga/installerssh/master/userdelexpired" && chmod +x /usr/local/bin/userdelexpired
