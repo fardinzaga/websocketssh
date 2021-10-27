@@ -320,14 +320,6 @@ wget -O ceklim "https://raw.githubusercontent.com/fardinzaga/websocketssh/master
 wget -O tendang "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/menu/tendang.sh"
 wget -O wbmn "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/menu/webmin.sh"
 wget -O kernel-updt "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/menu/karnel-update.sh"
-
-# Delete Acount SSH Expired
-echo "================  Auto deleted Account Expired ======================"
-wget -O /usr/local/bin/userdelexpired "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/userdelexpired" && chmod +x /usr/local/bin/userdelexpired
-
-echo "0 8 * * * root clear-log && reboot" >> /etc/crontab
-echo "0 0 * * * root xp" >> /etc/crontab
-
 chmod +x add-host 
 chmod +x menu
 chmod +x usernew
@@ -346,6 +338,12 @@ chmod +x ram
 chmod +x renew
 chmod +x wbmn
 chmod +x kernel-updt
+
+# Delete Acount SSH Expired
+echo "================  Auto deleted Account Expired ======================"
+wget -O /usr/local/bin/userdelexpired "https://raw.githubusercontent.com/fardinzaga/installerssh/master/userdelexpired" && chmod +x /usr/local/bin/userdelexpired
+
+echo "0 0 * * * root /usr/local/bin/user-expire" > /etc/cron.d/user-expire
 
 # remove unnecessary files
 apt -y autoclean
