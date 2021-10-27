@@ -5,7 +5,7 @@
 cd
 
 #Install Script Websocket-SSH Python
-wget -O /usr/local/bin/ws-openssh https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/openssh-socket.py
+#wget -O /usr/local/bin/ws-openssh https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/openssh-socket.py
 wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/dropbear-ws.py
 wget -O /usr/local/bin/ws-fauzanvpn https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/fauzanvpn-ws.py
 wget -O /usr/local/bin/ws-maulana https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/maulana-ws.py
@@ -15,7 +15,7 @@ wget -O /usr/local/bin/ws-ovpn https://raw.githubusercontent.com/fardinzaga/webs
 wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/ws-stunnel.py && chmod +x /usr/local/bin/ws-stunnel.py
 
 #izin permision
-chmod +x /usr/local/bin/ws-openssh
+#chmod +x /usr/local/bin/ws-openssh
 chmod +x /usr/local/bin/ws-dropbear
 chmod +x /usr/local/bin/ws-fauzanvpn
 chmod +x /usr/local/bin/ws-maulana
@@ -25,7 +25,7 @@ chmod +x /usr/local/bin/ws-ovpn
 chmod +x /usr/local/bin/ws-stunnel
 
 #System OpenSSH Websocket-SSH Python
-wget -O /etc/systemd/system/ws-openssh.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/service-wsopenssh && chmod +x /etc/systemd/system/ws-openssh.service
+#wget -O /etc/systemd/system/ws-openssh.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/service-wsopenssh && chmod +x /etc/systemd/system/ws-openssh.service
 
 #System Dropbear Websocket-SSH Python
 wget -O /etc/systemd/system/ws-dropbear.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/service-wsdropbear && chmod +x /etc/systemd/system/ws-dropbear.service
@@ -51,11 +51,11 @@ wget -O /etc/systemd/system/ws-stunnel.service https://raw.githubusercontent.com
 
 #restart service
 #
-systemctl daemon-reload
+#systemctl daemon-reload
 #Enable & Start & Restart ws-openssh service
-systemctl enable ws-openssh.service
-systemctl start ws-openssh.service
-systemctl restart ws-openssh.service
+#systemctl enable ws-openssh.service
+#systemctl start ws-openssh.service
+#systemctl restart ws-openssh.service
 
 #Enable & Start & Restart ws-dropbear service
 systemctl enable ws-dropbear.service
