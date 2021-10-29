@@ -51,7 +51,7 @@ wget -O /etc/systemd/system/ws-stunnel.service https://raw.githubusercontent.com
 
 #restart service
 #
-#systemctl daemon-reload
+systemctl daemon-reload
 #Enable & Start & Restart ws-openssh service
 systemctl enable ws-openssh.service
 systemctl start ws-openssh.service
