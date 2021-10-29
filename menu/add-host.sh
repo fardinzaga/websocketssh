@@ -7,11 +7,11 @@ apt install jq curl -y
 rm -f /root/domain
 rm -f /etc/v2ray/domain
 
-DOMAIN=akbar-store.me
+DOMAIN=fauzanvpn.xyz
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-SUB_DOMAIN=${sub}.akbar-store.me
-CF_ID=sandigaming01@gmail.com
-CF_KEY=3bbac9ca50413bd6b05c1b7989871a077c2c3
+SUB_DOMAIN=${sub}.fauzanvpn.xyz
+CF_ID=zafrnavpn@nagarata.com
+CF_KEY=1c9b49618e2b7ca363e1dedbca45241e2b789
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 echo "Updating DNS for ${SUB_DOMAIN}..."
