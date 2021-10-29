@@ -115,6 +115,7 @@ sed -i 's/#Port 22/Port 22/g' /etc/ssh/sshd_config
 sed -i '/Port 22/a Port 88' /etc/ssh/sshd_config
 sed -i '/Port 22/a Port 200' /etc/ssh/sshd_config
 sed -i '/Port 22/a Port 5000' /etc/ssh/sshd_config
+sed -i '/Port 22/a Port 286' /etc/ssh/sshd_config
 sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
 /etc/init.d/ssh restart
 
@@ -170,7 +171,7 @@ connect = 127.0.0.1:97
 
 [ws-stunnel]
 accept = 2097
-connect = 127.0.0.1:98
+connect = 127.0.0.1:800
 
 [dropbear]
 accept = 444
