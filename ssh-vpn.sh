@@ -168,6 +168,10 @@ socket = r:TCP_NODELAY=1
 accept = 443
 connect = 127.0.0.1:97
 
+[ws-stunnel]
+accept = 2097
+connect = 127.0.0.1:98
+
 [dropbear]
 accept = 444
 connect = 127.0.0.1:44
