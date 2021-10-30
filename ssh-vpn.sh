@@ -115,7 +115,6 @@ sed -i 's/#Port 22/Port 22/g' /etc/ssh/sshd_config
 sed -i '/Port 22/a Port 88' /etc/ssh/sshd_config
 sed -i '/Port 22/a Port 200' /etc/ssh/sshd_config
 sed -i '/Port 22/a Port 5000' /etc/ssh/sshd_config
-sed -i '/Port 22/a Port 168' /etc/ssh/sshd_config
 sed -i '/Port 22/a Port 625' /etc/ssh/sshd_config
 sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
 /etc/init.d/ssh restart
