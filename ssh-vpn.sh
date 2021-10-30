@@ -170,7 +170,7 @@ accept = 443
 connect = 127.0.0.1:97
 
 [ws-stunnel]
-accept = 2096
+accept = 2086
 connect = 127.0.0.1:78
 
 [dropbear]
