@@ -30,11 +30,8 @@ echo "$host" >> /etc/v2ray/domain
 
 #install ssh ovpn
 wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn.sh ./ssh-vpn.sh
-#install zip ovpn
-wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/zip-ovpn.sh && chmod +x zip-ovpn.sh && screen -S zip-ovpn.sh ./zip-ovpn.sh
 
 rm -f /root/ssh-vpn.sh
-rm -f /root/zip-ovpn.sh
 history -c
 echo "1.2" > /home/ver
 clear
