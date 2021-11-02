@@ -28,6 +28,24 @@ won="$(cat ~/log-install.txt | grep -w "WsOvpn" | cut -d: -f2)"
 wsd="$(cat ~/log-install.txt | grep -w "WsDropbear" | cut -d: -f2)"
 ovpn="$(netstat -nlpt | grep -i openvpn | grep -i 0.0.0.0 | awk '{print $4}' | cut -d: -f2)"
 ovpn2="$(netstat -nlpu | grep -i openvpn | grep -i 0.0.0.0 | awk '{print $4}' | cut -d: -f2)"
+#!/bin/bash/zipovpn
+if [ ! -e /home/vps/public_html/TCP.ovpn ]; then
+cp /etc/openvpn/client-tcp-1194.ovpn /home/vps/public_html/TCP.ovpn
+cp /etc/openvpn/client-udp-2200.ovpn /home/vps/public_html/UDP.ovpn
+cp /etc/openvpn/client-tcp-ssl.ovpn /home/vps/public_html/SSL.ovpn
+
+mkdir /root/OpenVPN
+cp -r /etc/openvpn/client-tcp-ssl.ovpn OpenVPN/SSL.ovpn
+cp -r /etc/openvpn/client-udp-2200.ovpn OpenVPN/UDP.ovpn
+cp -r /etc/openvpn/client-tcp-1194.ovpn OpenVPN/TCP.ovpn
+cd /root
+zip -r openvpn.zip OpenVPN > /dev/null 2>&1
+cp -r /root/openvpn.zip /home/vps/public_html/ALL.zip
+clear
+figlet -f slant SUKSES | lolcat
+rm -rf /root/OpenVPN
+rm -f /root/openvpn.zip
+clear
 sleep 1
 echo Ping Host
 echo Cek Hak Akses...
