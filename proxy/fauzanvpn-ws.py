@@ -6,14 +6,14 @@ LISTENING_ADDR = '0.0.0.0'
 if sys.argv[1:]:
   LISTENING_PORT = sys.argv[1]
 else:
-  LISTENING_PORT = 78
+  LISTENING_PORT = 97
 # Pass
 PASS = ''
 
 # CONST
 BUFLEN = 4096 * 4
 TIMEOUT = 60
-DEFAULT_HOST = '127.0.0.1:625'
+DEFAULT_HOST = '127.0.0.1:1197'
 RESPONSE = 'HTTP/1.1 101 <b><font color="red">SETUP BY FAUZAN-VPN</b></font>\r\nContent-Length: 104857600000\r\n\r\n'
 
 class Server(threading.Thread):
@@ -170,7 +170,7 @@ class ConnectionHandler(threading.Thread):
             host = host[:i]
         else:
             if self.method=='CONNECT':
-                port = 2096
+                port = 443
             else:
                 port = sys.argv[1]
 
