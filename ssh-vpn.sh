@@ -258,8 +258,6 @@ clear
 figlet -f slant SUKSES | lolcat
 rm -rf /root/OpenVPN
 rm -f /root/openvpn.zip
-sleep 5
-clear
 
 # install fail2ban
 apt -y install fail2ban
