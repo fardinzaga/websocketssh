@@ -324,6 +324,7 @@ netfilter-persistent reload
 # download script
 cd /usr/bin
 wget -O add-host "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/menu/add-host.sh"
+wget -O add-host2 "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/menu/add-host2.sh"
 wget -O about "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/menu/about.sh"
 wget -O menu "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/menu/menu.sh"
 wget -O usernew "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/menu/usernew.sh"
@@ -341,7 +342,8 @@ wget -O ceklim "https://raw.githubusercontent.com/fardinzaga/websocketssh/master
 wget -O tendang "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/menu/tendang.sh"
 wget -O wbmn "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/menu/webmin.sh"
 wget -O kernel-updt "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/menu/karnel-update.sh"
-chmod +x add-host 
+chmod +x add-host
+chmod +x add-host2 
 chmod +x menu
 chmod +x usernew
 chmod +x trial
