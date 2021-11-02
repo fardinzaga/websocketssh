@@ -40,25 +40,6 @@ sleep 0.5
 echo Setting Password: $Pass
 sleep 0.5
 clear
-#!/bin/bash
-if [ ! -e /home/vps/public_html/TCP.ovpn ]; then
-cp /etc/openvpn/client-tcp-1194.ovpn /home/vps/public_html/TCP.ovpn
-cp /etc/openvpn/client-udp-2200.ovpn /home/vps/public_html/UDP.ovpn
-cp /etc/openvpn/client-tcp-ssl.ovpn /home/vps/public_html/SSL.ovpn
-
-mkdir /root/OpenVPN
-cp -r /etc/openvpn/client-tcp-ssl.ovpn OpenVPN/SSL.ovpn
-cp -r /etc/openvpn/client-udp-2200.ovpn OpenVPN/UDP.ovpn
-cp -r /etc/openvpn/client-tcp-1194.ovpn OpenVPN/TCP.ovpn
-cd /root
-zip -r openvpn.zip OpenVPN > /dev/null 2>&1
-cp -r /root/openvpn.zip /home/vps/public_html/ALL.zip
-clear
-figlet -f slant SUKSES | lolcat
-rm -rf /root/OpenVPN
-rm -f /root/openvpn.zip
-sleep 5
-clear
 useradd -e `date -d "$masaaktif days" +"%Y-%m-%d"` -s /bin/false -M $Login
 exp="$(chage -l $Login | grep "Account expires" | awk -F": " '{print $2}')"
 echo -e "$Pass\n$Pass\n"|passwd $Login &> /dev/null
@@ -78,9 +59,7 @@ echo -e "Port Websocket   :$web"
 echo -e "Port Ws Openssh  :$wso"
 echo -e "Port Ws Ovpn     :$won"
 echo -e "Port Ws Dropbear :$wsd"
-echo -e "OpenVPN          : TCP 1194 http://$domain:81/client-tcp-1194.ovpn"
-echo -e "OpenVPN          : UDP 2200 http://$domain:81/client-udp-2200.ovpn"
-echo -e "OpenVPN          : SSL 442 http://$domain:81/client-tcp-ssl.ovpn"
+echo -e "Zip File         : http://$domain:81/ALL.zip"
 echo -e "badvpn           : 7100 , 7200 , 7300"
 echo -e "================================="
 echo -e "Expired On       : $exp"
