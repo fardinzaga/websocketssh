@@ -125,7 +125,7 @@ sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
 apt -y install dropbear
 sed -i 's/NO_START=1/NO_START=0/g' /etc/default/dropbear
 sed -i 's/DROPBEAR_PORT=22/DROPBEAR_PORT=44/g' /etc/default/dropbear
-sed -i 's/DROPBEAR_EXTRA_ARGS=/DROPBEAR_EXTRA_ARGS="-p 77 -p 2000 -p 4000 -p 276 -p 381 -p 187 -p 109 -p 143 "/g' /etc/default/dropbear
+sed -i 's/DROPBEAR_EXTRA_ARGS=/DROPBEAR_EXTRA_ARGS="-p 77 -p 2000 -p 4000 -p 276 -p 187 -p 109 -p 143 "/g' /etc/default/dropbear
 
 # update dropbear 2020
 wget https://matt.ucc.asn.au/dropbear/releases/dropbear-2020.81.tar.bz2
