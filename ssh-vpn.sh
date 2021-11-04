@@ -180,7 +180,7 @@ connect = 127.0.0.1:953
 
 [openvpn]
 accept = 442
-connect = 127.0.0.1:87
+connect = 127.0.0.1:1194
 
 END
 
