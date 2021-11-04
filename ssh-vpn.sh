@@ -113,7 +113,7 @@ screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7300 --max-clients 500
 cd
 sed -i 's/#Port 22/Port 22/g' /etc/ssh/sshd_config
 sed -i '/Port 22/a Port 88' /etc/ssh/sshd_config
-sed -i '/Port 22/a Port 365' /etc/ssh/sshd_config
+sed -i '/Port 22/a Port 953' /etc/ssh/sshd_config
 sed -i '/Port 22/a Port 200' /etc/ssh/sshd_config
 sed -i '/Port 22/a Port 5000' /etc/ssh/sshd_config
 sed -i '/Port 22/a Port 625' /etc/ssh/sshd_config
@@ -124,7 +124,7 @@ sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
 apt -y install dropbear
 sed -i 's/NO_START=1/NO_START=0/g' /etc/default/dropbear
 sed -i 's/DROPBEAR_PORT=22/DROPBEAR_PORT=44/g' /etc/default/dropbear
-sed -i 's/DROPBEAR_EXTRA_ARGS=/DROPBEAR_EXTRA_ARGS="-p 77 -p 2000 -p 4000 -p 276 -p 381 -p 187 -p 143 -p 109 "/g' /etc/default/dropbear
+sed -i 's/DROPBEAR_EXTRA_ARGS=/DROPBEAR_EXTRA_ARGS="-p 77 -p 2000 -p 4000 -p 276 -p 381 -p 187 -p 109 -p 143 "/g' /etc/default/dropbear
 
 # update dropbear 2020
 wget https://matt.ucc.asn.au/dropbear/releases/dropbear-2020.81.tar.bz2
@@ -176,11 +176,11 @@ connect = 127.0.0.1:143
 
 [openssh]
 accept = 777
-connect = 127.0.0.1:365
+connect = 127.0.0.1:953
 
 [openvpn]
 accept = 442
-connect = 127.0.0.1:1194
+connect = 127.0.0.1:87
 
 END
 
