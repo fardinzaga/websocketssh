@@ -82,14 +82,11 @@ ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 # set locale
 sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
 
-# install screenfetch
-cd
-wget 'https://raw.githubusercontent.com/fardinzaga/websocketssh/master/screenfetch/screenfetch-dev'
-mv screeftech-dev /usr/bin/screenfetch
-chmod +x /usr/bin/screenfetch
+# install
+apt update
+apt install figlet toilet cowsay -y
 echo "clear" >> .profile
-echo "screenfetch" >> .profile
-echo "date" >> .profile
+echo "figlet -tc -f small "FauzanVpn" >> .profile
 
 # install webserver
 apt -y install nginx
