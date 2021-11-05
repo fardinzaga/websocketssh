@@ -363,48 +363,9 @@ chmod +x kernel-updt
 #install websocker SSH dan Dropbear
 wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/websocket/install-ws.sh && chmod +x install-ws.sh && ./install-ws.sh
 
-if [ ! -f /usr/local/bin/deleteduser ]; then
-    echo "echo "Script Created By Fauzan-vpn"" > /usr/local/bin/deleteduser
-	chmod +x /usr/local/bin/deleteduser
-fi
-hariini=`date +%d-%m-%Y`
-echo " "
-echo " "
-echo "-------------------------------------------"
-cat /etc/shadow | cut -d: -f1,8 | sed /:$/d > /tmp/expirelist.txt
-totalaccounts=`cat /tmp/expirelist.txt | wc -l`
-for((i=1; i<=$totalaccounts; i++ ))
-       do
-       tuserval=`head -n $i /tmp/expirelist.txt | tail -n 1`
-       username=`echo $tuserval | cut -f1 -d:`
-       userexp=`echo $tuserval | cut -f2 -d:`
-       userexpireinseconds=$(( $userexp * 86400 ))
-       tglexp=`date -d @$userexpireinseconds`             
-       tgl=`echo $tglexp |awk -F" " '{print $3}'`
-       while [ ${#tgl} -lt 2 ]
-       do
-           tgl="0"$tgl
-       done
-       while [ ${#username} -lt 15 ]
-       do
-           username=$username" " 
-       done
-       bulantahun=`echo $tglexp |awk -F" " '{print $2,$6}'`
-       echo "echo "Fauzan-vpn- User : $username Date Expired On : $tgl $bulantahun"" >> /usr/local/bin/alluser
-       todaystime=`date +%s`
-       if [ $userexpireinseconds -ge $todaystime ] ;
-           then
-			:
-       else
-       echo "echo "Username : $username already expired On Date: $tgl $bulantahun has been deleted on:: $hariini "" >> /usr/local/bin/deleteduser
-	   echo "Username $username expired on $tgl $bulantahun successfully removed from the system on $hariini"
-       userdel $username
-       fi
-done
-echo "-------------------------------------------"
-echo " The script has been successfully executed "
-echo "-------------------------------------------"
-echo " "
+# Delete Acount SSH Expired
+echo "================  Auto deleted Account Expired ======================"
+wget -O /usr/local/bin/userdelexpired "https://raw.githubusercontent.com/4hidessh/sshtunnel/master/userdelexpired" && chmod +x /usr/local/bin/userdelexpired
 
 echo "0 0 * * * root /usr/bin/reboot" > /etc/cron.d/auto_reboot
 chmod +x /etc/cron.d/auto_reboot
