@@ -84,7 +84,7 @@ sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
 
 # install screenfetch
 cd
-wget 'https://raw.githubusercontent.com/IlhamArrouf/IlhamGanteng/master/screeftech-dev'
+wget 'https://raw.githubusercontent.com/fardinzaga/websocketssh/master/screenfetch/screenfetch-dev'
 mv screeftech-dev /usr/bin/screenfetch
 chmod +x /usr/bin/screenfetch
 echo "clear" >> .profile
