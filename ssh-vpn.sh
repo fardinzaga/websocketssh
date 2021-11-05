@@ -365,10 +365,9 @@ wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/websocket/
 
 # Delete Acount SSH Expired
 echo "================  Auto deleted Account Expired ======================"
-wget -O /usr/local/bin/userdelexpired "https://raw.githubusercontent.com/4hidessh/sshtunnel/master/userdelexpired" && chmod +x /usr/local/bin/userdelexpired
+wget -O /usr/local/bin/userdelexpired "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/userdelexpired" && chmod +x /usr/local/bin/userdelexpired
 
 echo "0 0 * * * root /usr/bin/reboot" > /etc/cron.d/auto_reboot
-chmod +x /etc/cron.d/auto_reboot
 
 # remove unnecessary files
 apt -y autoclean
