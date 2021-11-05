@@ -1,6 +1,6 @@
 #!/bin/bash
 
 clear
-figlet -tc -f small "FauzanVpn
+echo -e "MOD BY FAUZAN-VPN"
 cat /root/log-install.txt
 echo ""
