@@ -88,6 +88,7 @@ echo "clear" >> .profile
 echo "echo ==========================" >> .profile
 echo "echo Selamat Datang Fauzanvpn !" >> .profile
 echo "echo Ketik menu untuk melihat list" >> .profile
+echo "echo ==========================" >> .profile
 
 # install webserver
 apt -y install nginx
