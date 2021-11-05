@@ -176,11 +176,11 @@ connect = 127.0.0.1:97
 
 [dropbear]
 accept = 444
-connect = 127.0.0.1:143
+connect = 127.0.0.1:44
 
 [openssh]
 accept = 777
-connect = 127.0.0.1:953
+connect = 127.0.0.1:22
 
 [openvpn]
 accept = 442
