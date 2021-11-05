@@ -335,6 +335,7 @@ wget -O member "https://raw.githubusercontent.com/fardinzaga/websocketssh/master
 wget -O delete "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/menu/delete.sh"
 wget -O cek "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/menu/cek.sh"
 wget -O restart "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/menu/restart.sh"
+wget -0 speedtest "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/speedtest/speedtest-cli.py"
 wget -O info "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/menu/info.sh"
 wget -O ram "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/menu/ram.sh"
 wget -O renew "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/menu/renew.sh"
@@ -353,6 +354,7 @@ chmod +x member
 chmod +x delete
 chmod +x cek
 chmod +x restart
+chmod +x speedtest
 chmod +x info
 chmod +x about
 chmod +x autokill
