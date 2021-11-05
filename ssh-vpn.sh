@@ -82,11 +82,14 @@ ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 # set locale
 sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
 
-# install
-apt-get --reinstall --fix-missing install -y bzip2 gzip coreutils wget screen rsyslog iftop htop net-tools zip unzip wget net-tools curl nano sed screen gnupg gnupg1 bc apt-transport-https build-essential dirmngr libxml-parser-perl neofetch git
+# install screenfetch
+cd
+wget 'https://raw.githubusercontent.com/IlhamArrouf/IlhamGanteng/master/screeftech-dev'
+mv screeftech-dev /usr/bin/screenfetch
+chmod +x /usr/bin/screenfetch
 echo "clear" >> .profile
-echo "echo ================" >> .profile
-echo "echo Mod by Fauzanvpn" >> .profile
+echo "screenfetch" >> .profile
+echo "date" >> .profile
 
 # install webserver
 apt -y install nginx
@@ -129,7 +132,6 @@ sed -i 's/DROPBEAR_EXTRA_ARGS=/DROPBEAR_EXTRA_ARGS="-p 77 -p 2000 -p 4000 -p 276
 echo "/bin/false" >> /etc/shells
 echo "/usr/sbin/nologin" >> /etc/shells
 /etc/init.d/dropbear restart
-cd
 
 # update dropbear 2020
 wget https://matt.ucc.asn.au/dropbear/releases/dropbear-2020.81.tar.bz2
@@ -139,6 +141,7 @@ cd dropbear-2020.81
 make && make install
 mv /usr/sbin/dropbear /usr/sbin/dropbear1
 ln /usr/local/sbin/dropbear /usr/sbin/dropbear
+cd
 
 # install squid
 cd
