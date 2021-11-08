@@ -15,10 +15,10 @@ ver=$VERSION_ID
 country=ID
 state=Indonesia
 locality=Indonesia
-organization=Fauzanvpn.com
-organizationalunit=Fauzanvpn.com
-commonname=0.0.0.0
-email=Fauzanvpn.com
+organization=fauzanvpn.com
+organizationalunit=fauzanvpn.com
+commonname=fauzanvpn.com
+email=admin@fauzanvpn.com
 
 # common password debian 
 wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/password/common-password-deb9"
@@ -405,8 +405,8 @@ echo "unset HISTFILE" >> /etc/profile
 
 cd
 rm -f /root/ssh-vpn.sh
-#rm -f /root/cert.pem
-#rm -f /root/key.pem
+rm -f /root/cert.pem
+rm -f /root/key.pem
 
 echo '#!/bin/bash' > /usr/local/bin/reboot_otomatis 
 echo 'tanggal=$(date +"%m-%d-%Y")' >> /usr/local/bin/reboot_otomatis 
