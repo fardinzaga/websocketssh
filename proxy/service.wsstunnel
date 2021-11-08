@@ -1,13 +1,5 @@
-# /usr/local/bin/ws-openssh
-# /usr/local/bin/ws-dropbear
-# /usr/local/bin/ws-fauzanvpn
-# /usr/local/bin/ws-maulana
-# /usr/local/bin/ws-udin
-# /usr/local/bin/ws-zahara
-# /usr/local/bin/ws-ovpn
-# /usr/local/bin/ws-stunnel
 [Unit]
-Description=SSH Over Websocket Python Fauzanvpn
+Description=Websocket-stunnel by Fauzan-Vpn
 Documentation=https://google.com
 After=network.target nss-lookup.target
 
@@ -17,8 +9,8 @@ User=root
 CapabilityBoundingSet=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
 AmbientCapabilities=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
 NoNewPrivileges=true
+ExecStart=/usr/bin/python -O /usr/local/bin/ws-stunnel 5052 -direct 5053
 Restart=on-failure
-ExecStart=/usr/bin/python -O /usr/local/bin/ws-stunnel
 
 [Install]
 WantedBy=multi-user.target
