@@ -176,10 +176,6 @@ connect = 127.0.0.1:109
 accept = 777
 connect = 127.0.0.1:22
 
-[websocketpython]
-accept = 2021
-connect = 127.0.0.1:109
-
 [websocket1]
 accept = 5052
 connect = 127.0.0.1:143
