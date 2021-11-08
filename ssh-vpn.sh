@@ -186,7 +186,7 @@ accept = 5052
 connect = 127.0.0.1:143
 
 [openvpn]
-accept = 443
+accept = 442
 connect = 127.0.0.1:1194
 
 END
