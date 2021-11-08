@@ -169,20 +169,24 @@ socket = a:SO_REUSEADDR=1
 socket = l:TCP_NODELAY=1
 socket = r:TCP_NODELAY=1
 
-[ws-stunnel]
-accept = 443
-connect = 127.0.0.1:97
-
 [dropbear]
-accept = 444
-connect = 127.0.0.1:44
+accept = 443
+connect = 127.0.0.1:109
 
-[openssh]
+[dropbear2]
 accept = 777
 connect = 127.0.0.1:22
 
+[websocketpython]
+accept = 2021
+connect = 127.0.0.1:109
+
+[websocket1]
+accept = 5052
+connect = 127.0.0.1:143
+
 [openvpn]
-accept = 442
+accept = 443
 connect = 127.0.0.1:1194
 
 END
@@ -369,16 +373,16 @@ wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/websocket/
 echo "================  Auto deleted Account Expired ======================"
 wget -O /usr/local/bin/userdelexpired "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/userdelexpired" && chmod +x /usr/local/bin/userdelexpired
 
-echo "0 0 * * * root /usr/bin/reboot" > /etc/cron.d/auto_reboot
-
+echo "0 5 * * * root clear-log" >> /etc/crontab
+echo "0 0 * * * root xp" >> /etc/crontab
 # remove unnecessary files
-apt -y autoclean
-apt -y remove --purge unscd
+apt-get -y autoclean
+apt-get -y remove --purge unscd
 apt-get -y --purge remove samba*;
 apt-get -y --purge remove apache2*;
 apt-get -y --purge remove bind9*;
 apt-get -y remove sendmail*
-apt -y autoremove
+apt-get -y autoremove
 
 # finishing
 cd
@@ -402,6 +406,20 @@ echo "unset HISTFILE" >> /etc/profile
 
 cd
 rm -f /root/ssh-vpn.sh
+#rm -f /root/cert.pem
+#rm -f /root/key.pem
 
+echo '#!/bin/bash' > /usr/local/bin/reboot_otomatis 
+echo 'tanggal=$(date +"%m-%d-%Y")' >> /usr/local/bin/reboot_otomatis 
+echo 'waktu=$(date +"%T")' >> /usr/local/bin/reboot_otomatis
+echo 'clear-log' >> /usr/local/bin/reboot-otomatis
+echo 'resett' >> /usr/local/bin/reboot-otomatis
+echo 'echo "Server Berhasil Reboot Pada Tanggal $tanggal Dan Jam $waktu." >> /root/log-reboot.txt' >> /usr/local/bin/reboot_otomatis 
+echo '/sbin/shutdown -r now' >> /usr/local/bin/reboot_otomatis 
+chmod +x /usr/local/bin/reboot_otomatis
+echo "0 */12 * * * root /usr/local/bin/reboot_otomatis" > /etc/cron.d/reboot_otomatis
+
+echo -e "Done Install SSH Services" | lolcat
+figlet -f slant OnePieceVPN | lolcat
 # finihsing
 clear
