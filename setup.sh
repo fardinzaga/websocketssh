@@ -45,12 +45,12 @@ echo ""  | tee -a log-install.txt
 echo "   >>> Service & Port"  | tee -a log-install.txt
 echo "   - OpenSSH              : 22"  | tee -a log-install.txt
 echo "   - OpenVPN              : TCP 1194, UDP 2200, SSL 442"  | tee -a log-install.txt
-echo "   - Stunnel4             : 444, 777"  | tee -a log-install.txt
+echo "   - Stunnel4             : 443, 777"  | tee -a log-install.txt
 echo "   - Dropbear             : 109, 143"  | tee -a log-install.txt
-echo "   - Ws SSL/TLS           : 443"  | tee -a log-install.txt
+echo "   - Ws SSL/TLS           : 2052, 2053"  | tee -a log-install.txt
 echo "   - WebSocket            : 80, 2095"  | tee -a log-install.txt
 echo "   - WsDropbear           : 8880, 2086"  | tee -a log-install.txt
-echo "   - WsOpenssh            : 2052, 2096"  | tee -a log-install.txt
+echo "   - WsOpenssh            : 100, 2095"  | tee -a log-install.txt
 echo "   - WsOvpn               : 2082"  | tee -a log-install.txt
 echo "   - Squid Proxy          : 3128, 8080 (limit to IP Server)"  | tee -a log-install.txt
 echo "   - Badvpn               : 7100, 7200, 7300"  | tee -a log-install.txt
