@@ -168,17 +168,17 @@ socket = a:SO_REUSEADDR=1
 socket = l:TCP_NODELAY=1
 socket = r:TCP_NODELAY=1
 
-[dropbear]
+[wstunnel]
 accept = 443
-connect = 127.0.0.1:109
+connect = 127.0.0.1:97
 
-[dropbear2]
+[dropbear]
 accept = 777
 connect = 127.0.0.1:22
 
-[websocket1]
-accept = 5052
-connect = 127.0.0.1:143
+[dropbear]
+accept = 445
+connect = 127.0.0.1:44
 
 [openvpn]
 accept = 442
@@ -388,7 +388,6 @@ chown -R www-data:www-data /home/vps/public_html
 /etc/init.d/ssh restart
 /etc/init.d/dropbear restart
 /etc/init.d/fail2ban restart
-/etc/init.d/webmin restart
 /etc/init.d/stunnel4 restart
 /etc/init.d/vnstat restart
 /etc/init.d/squid restart
