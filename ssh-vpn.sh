@@ -17,7 +17,7 @@ state=Indonesia
 locality=Indonesia
 organization=fauzanvpn.com
 organizationalunit=fauzanvpn.com
-commonname=0.0.0.0
+commonname=fauzanvpn.com
 email=admin@fauzanvpn.com
 
 # common password debian 
@@ -94,6 +94,32 @@ mkdir -p /home/vps/public_html
 wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/nginx/vps.conf"
 /etc/init.d/nginx restart
 
+# Creating a SSH server config using cat eof tricks
+cat <<'MySSHConfig' > /etc/ssh/sshd_config
+# Setup By Fauzan-Vpn
+Port 22
+AddressFamily inet
+ListenAddress 0.0.0.0
+HostKey /etc/ssh/ssh_host_rsa_key
+HostKey /etc/ssh/ssh_host_ecdsa_key
+HostKey /etc/ssh/ssh_host_ed25519_key
+PermitRootLogin yes
+MaxSessions 1024
+PubkeyAuthentication yes
+PasswordAuthentication yes
+PermitEmptyPasswords no
+ChallengeResponseAuthentication no
+UsePAM yes
+X11Forwarding yes
+PrintMotd no
+ClientAliveInterval 240
+ClientAliveCountMax 2
+UseDNS no
+Banner /etc/banner
+AcceptEnv LANG LC_*
+Subsystem   sftp  /usr/lib/openssh/sftp-server
+MySSHConfig
+
 # install badvpn
 cd
 wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/updgw/badvpn-udpgw64"
@@ -164,7 +190,7 @@ socket = l:TCP_NODELAY=1
 socket = r:TCP_NODELAY=1
 
 [wstunnel]
-accept = 2052
+accept = 443
 connect = 127.0.0.1:97
 
 [dropbear]
@@ -375,6 +401,8 @@ apt-get -y autoremove
 
 # finishing
 cd
+service cron restart
+service sshd restart
 chown -R www-data:www-data /home/vps/public_html
 /etc/init.d/nginx restart
 /etc/init.d/openvpn restart
