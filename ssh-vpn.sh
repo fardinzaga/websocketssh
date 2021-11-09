@@ -393,7 +393,7 @@ echo 'resett' >> /usr/local/bin/reboot-langsung
 echo 'echo "Server Berhasil Reboot Pada Tanggal $tanggal Dan Jam $waktu." >> /root/log-reboot.txt' >> /usr/local/bin/reboot_langsung 
 echo '/sbin/shutdown -r now' >> /usr/local/bin/reboot_langsung 
 chmod +x /root/reboot_langsung.sh
-echo "0 5 * * * root /root/reboot_langsung.sh" > /etc/cron.d/reboot_langsung
+echo "0 5 * * * root /usr/local/bin/reboot_langsung" > /etc/cron.d/reboot_langsung
 # remove unnecessary files
 apt-get -y autoclean
 apt-get -y remove --purge unscd
