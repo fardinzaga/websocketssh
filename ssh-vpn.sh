@@ -164,7 +164,7 @@ socket = l:TCP_NODELAY=1
 socket = r:TCP_NODELAY=1
 
 [wstunnel]
-accept = 443
+accept = 2052
 connect = 127.0.0.1:97
 
 [dropbear]
