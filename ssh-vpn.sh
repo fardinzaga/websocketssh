@@ -94,6 +94,32 @@ mkdir -p /home/vps/public_html
 wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/nginx/vps.conf"
 /etc/init.d/nginx restart
 
+# Creating a SSH server config using cat eof tricks
+cat <<'MySSHConfig' > /etc/ssh/sshd_config
+# Setup By Fauzan-Vpn
+Port 22
+AddressFamily inet
+ListenAddress 0.0.0.0
+HostKey /etc/ssh/ssh_host_rsa_key
+HostKey /etc/ssh/ssh_host_ecdsa_key
+HostKey /etc/ssh/ssh_host_ed25519_key
+PermitRootLogin yes
+MaxSessions 1024
+PubkeyAuthentication yes
+PasswordAuthentication yes
+PermitEmptyPasswords no
+ChallengeResponseAuthentication no
+UsePAM yes
+X11Forwarding yes
+PrintMotd no
+ClientAliveInterval 240
+ClientAliveCountMax 2
+UseDNS no
+Banner /etc/banner
+AcceptEnv LANG LC_*
+Subsystem   sftp  /usr/lib/openssh/sftp-server
+MySSHConfig
+
 # install badvpn
 cd
 wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/updgw/badvpn-udpgw64"
@@ -154,14 +180,29 @@ systemctl enable vnstat
 rm -f /root/vnstat-2.6.tar.gz
 rm -rf /root/vnstat-2.6
 
-# install stunnel
-apt install stunnel4 -y
+# Configure config stunnel
 cat > /etc/stunnel/stunnel.conf <<-END
-cert = /etc/stunnel/stunnel.pem
-client = no
+# Setup By Fauzan-Vpn
+pid = /var/run/stunnel.pid
 socket = a:SO_REUSEADDR=1
 socket = l:TCP_NODELAY=1
 socket = r:TCP_NODELAY=1
+debug = 2
+
+[ssl_frontend]
+key = /etc/stunnel/key.pem
+cert = /etc/stunnel/cert.crt
+accept  = 127.0.0.1:443
+connect = $MYIP:22
+ciphers = ALL
+client = no
+;sessiond = 127.0.0.1:443
+;session = 60
+TIMEOUTconnect = 5
+TIMEOUTbusy = 25
+TIMEOUTidle = 25
+TIMEOUTclose = 0
+END
 
 [wstunnel]
 accept = 443
@@ -377,6 +418,8 @@ apt-get -y autoremove
 # finishing
 cd
 chown -R www-data:www-data /home/vps/public_html
+service cron restart
+service sshd restart
 /etc/init.d/nginx restart
 /etc/init.d/openvpn restart
 /etc/init.d/cron restart
