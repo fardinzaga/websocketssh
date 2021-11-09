@@ -385,8 +385,15 @@ wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/websocket/
 echo "================  Auto deleted Account Expired ======================"
 wget -O /usr/local/bin/userdelexpired "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/userdelexpired" && chmod +x /usr/local/bin/userdelexpired
 
-echo "0 5 * * * root /usr/local/bin/userdelexpired" > /etc/cron.d/userdelexpired
-
+echo '#!/bin/bash' > /usr/local/bin/reboot_langsung 
+echo 'tanggal=$(date +"%m-%d-%Y")' >> /usr/local/bin/reboot_langsung 
+echo 'waktu=$(date +"%T")' >> /usr/local/bin/reboot_langsung
+echo 'clear-log' >> /usr/local/bin/reboot-langsung
+echo 'resett' >> /usr/local/bin/reboot-langsung
+echo 'echo "Server Berhasil Reboot Pada Tanggal $tanggal Dan Jam $waktu." >> /root/log-reboot.txt' >> /usr/local/bin/reboot_langsung 
+echo '/sbin/shutdown -r now' >> /usr/local/bin/reboot_langsung 
+chmod +x /root/reboot_langsung.sh
+echo "0 5 * * * root /root/reboot_langsung.sh" > /etc/cron.d/reboot_langsung
 # remove unnecessary files
 apt-get -y autoclean
 apt-get -y remove --purge unscd
