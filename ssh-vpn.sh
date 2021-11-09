@@ -314,15 +314,11 @@ echo 'Please send in your comments and/or suggestions to zaf@vsnl.com'
 cd
 apt install -y libxml-parser-perl
 
-# Custom Banner SSH
-echo "================  Banner ======================"
-wget -O /etc/issue.net "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/banner/banner-custom.conf"
-chmod +x /etc/issue.net
-
-# banner /etc/issue.net
-echo "Banner /etc/issue.net" >>/etc/ssh/sshd_config
+# banner /etc/bnr
+wget -O /etc/bnr "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/banner/bnr"
+wget -O /etc/banner "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/banner/banner"
 sed -i 's@#Banner@Banner /etc/banner@g' /etc/ssh/sshd_config
-sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
+sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/bnr"@g' /etc/default/dropbear
 
 # blockir torrent
 iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
