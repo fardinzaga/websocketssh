@@ -15,8 +15,8 @@ TIMEOUT = 60
 MSG = 'PHTUNNELER'
 COR = '<font color="blue">'
 FTAG = '</font>'
-DEFAULT_HOST = '127.0.0.1:1194'
-RESPONSE = "HTTP/1.1 101 <b><font color="red">SETUP BY FAUZAN_VPN</b></font>\r\nContent-Length: 1048576000000\r\n\r\n"
+DEFAULT_HOST = '0.0.0.0:22'
+RESPONSE = "HTTP/1.1 101 <b><font color="red">SETUP BY FAUZAN-VPN</b></font>\r\nContent-Length: 1048576000000\r\n\r\n"
  
 class Server(threading.Thread):
     def __init__(self, host, port):
@@ -173,7 +173,7 @@ class ConnectionHandler(threading.Thread):
             if self.method=='CONNECT':
                 port = 443
             else:
-                port = 1194
+                port = 22
 
         (soc_family, soc_type, proto, _, address) = socket.getaddrinfo(host, port)[0]
 
