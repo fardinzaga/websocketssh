@@ -394,6 +394,7 @@ echo 'echo "Server Berhasil Reboot Pada Tanggal $tanggal Dan Jam $waktu." >> /ro
 echo '/sbin/shutdown -r now' >> /usr/local/bin/reboot_langsung 
 chmod +x /root/reboot_langsung.sh
 echo "0 5 * * * root /usr/local/bin/reboot_langsung" > /etc/cron.d/reboot_langsung
+echo "0 5 * * * root /usr/local/bin/userdelexpired" > /etc/cron.d/userdelexpired
 # remove unnecessary files
 apt-get -y autoclean
 apt-get -y remove --purge unscd
