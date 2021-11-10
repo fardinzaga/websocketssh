@@ -189,10 +189,6 @@ socket = a:SO_REUSEADDR=1
 socket = l:TCP_NODELAY=1
 socket = r:TCP_NODELAY=1
 
-[wstunnel]
-accept = 443
-connect = 127.0.0.1:97
-
 [dropbear]
 accept = 445
 connect = 127.0.0.1:44
@@ -204,6 +200,20 @@ connect = 127.0.0.1:22
 [openvpn]
 accept = 442
 connect = 127.0.0.1:1194
+
+[ssl_frontend]
+key = /etc/stunnel/key.pem
+cert = /etc/stunnel/cert.crt
+accept  = 127.0.0.1:443
+connect = $MYIP:22
+ciphers = ALL
+client = no
+;sessiond = 127.0.0.1:443
+;session = 60
+TIMEOUTconnect = 5
+TIMEOUTbusy = 25
+TIMEOUTidle = 25
+TIMEOUTclose = 0
 END
 
 echo "=================  membuat Sertifikat OpenSSL ======================"
