@@ -196,10 +196,6 @@ connect = 127.0.0.1:109
 [dropbear]
 accept = 445
 connect = 127.0.0.1:22
-
-[dropbear]
-accept = 777
-connect = 127.0.0.1:1194
 END
 
 echo "=================  membuat Sertifikat OpenSSL ======================"
