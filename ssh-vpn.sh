@@ -191,7 +191,7 @@ socket = r:TCP_NODELAY=1
 
 [ws-stunnel]
 accept = 443
-connect = 127.0.0.1:1194
+connect = 127.0.0.1:109
 
 [dropbear]
 accept = 445
@@ -199,7 +199,7 @@ connect = 127.0.0.1:44
 
 [dropbear]
 accept = 777
-connect = 127.0.0.1:22
+connect = 127.0.0.1:1194
 END
 
 echo "=================  membuat Sertifikat OpenSSL ======================"
