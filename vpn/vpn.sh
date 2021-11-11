@@ -60,8 +60,6 @@ auth-nocache
 cipher none
 setenv CLIENT_CERT 0
 auth-user-pass
-comp-lzo
-verb 3
 END
 
 sed -i $MYIP2 /etc/openvpn/client-tcp-1194.ovpn;
@@ -89,8 +87,6 @@ auth-nocache
 cipher none
 setenv CLIENT_CERT 0
 auth-user-pass
-comp-lzo
-verb 3
 END
 
 sed -i $MYIP2 /etc/openvpn/client-udp-2200.ovpn;
@@ -108,8 +104,6 @@ nobind
 persist-key
 persist-tun
 auth-user-pass
-comp-lzo
-verb 3
 END
 
 sed -i $MYIP2 /etc/openvpn/client-tcp-ssl.ovpn;
