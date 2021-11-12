@@ -234,7 +234,7 @@ service sslh restart
 # ==============================
 
 # Getting Proxy Template
-wget -q -O /usr/local/bin/edu-proxy linkkalian/proxy.py
+wget -q -O /usr/local/bin/edu-proxy https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/proxy.py
 chmod +x /usr/local/bin/edu-proxy
 
 # Installing Service
