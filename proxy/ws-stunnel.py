@@ -2,18 +2,18 @@
 import socket, threading, thread, select, signal, sys, time, getopt
 
 # Listen
-LISTENING_ADDR = '127.0.0.1'
+LISTENING_ADDR = '0.0.0.0'
 if sys.argv[1:]:
   LISTENING_PORT = sys.argv[1]
 else:
-  LISTENING_PORT = 700
+  LISTENING_PORT = 2082
 # Pass
 PASS = ''
 
 # CONST
 BUFLEN = 4096 * 4
 TIMEOUT = 60
-DEFAULT_HOST = '127.0.0.1:143'
+DEFAULT_HOST = '127.0.0.1:1194'
 RESPONSE = 'HTTP/1.1 101 <b><font color="red">SETUP BY FAUZAN-VPN</b></font>\r\nContent-Length: 104857600000\r\n\r\n'
 
 class Server(threading.Thread):
