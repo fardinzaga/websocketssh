@@ -17,7 +17,7 @@ state=Indonesia
 locality=Indonesia
 organization=fauzanvpn.com
 organizationalunit=fauzanvpn.com
-commonname=0.0.0.0
+commonname=fauzanvpn
 email=admin@fauzanvpn.com
 
 # common password debian 
