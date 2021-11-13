@@ -189,17 +189,17 @@ socket = a:SO_REUSEADDR=1
 socket = l:TCP_NODELAY=1
 socket = r:TCP_NODELAY=1
 
-[ws-stunnel]
+[dropbear]
 accept = 443
-connect = 127.0.0.1:109
+connect = 127.0.0.1:22
 
 [ws-stunnel]
 accept = 2096
 connect = 127.0.0.1:443
 
-[dropbear]
+[dropbear1]
 accept = 777
-connect = 127.0.0.1:22
+connect = 127.0.0.1:109
 
 [openssh]
 accept = 442
