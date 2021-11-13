@@ -199,7 +199,7 @@ connect = 127.0.0.1:443
 
 [dropbear]
 accept = 777
-connect = 127.0.0.1:44
+connect = 127.0.0.1:22
 
 [openssh]
 accept = 442
