@@ -191,19 +191,15 @@ socket = r:TCP_NODELAY=1
 
 [ws-stunnel]
 accept = 443
-connect = 127.0.0.1:109
+connect = 127.0.0.1:22
 
 [ws-stunnel]
 accept = 2096
 connect = 127.0.0.1:443
 
 [dropbear]
-accept = 445
-connect = 127.0.0.1:22
-
-[dropbear]
 accept = 777
-connect = 127.0.0.1:44
+connect = 127.0.0.1:109
 
 [openssh]
 accept = 442
