@@ -353,15 +353,17 @@ wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/websocket/
 echo "================  Auto deleted Account Expired ======================"
 wget -O /usr/local/bin/userdelexpired "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/userdelexpired" && chmod +x /usr/local/bin/userdelexpired
 
-echo '#!/bin/bash' > /usr/local/bin/reboot_langsung 
-echo 'tanggal=$(date +"%m-%d-%Y")' >> /usr/local/bin/reboot_langsung 
-echo 'waktu=$(date +"%T")' >> /usr/local/bin/reboot_langsung
-echo 'clear-log' >> /usr/local/bin/reboot-langsung
-echo 'resett' >> /usr/local/bin/reboot-langsung
-echo 'echo "Server Berhasil Reboot Pada Tanggal $tanggal Dan Jam $waktu." >> /root/log-reboot.txt' >> /usr/local/bin/reboot_langsung 
-echo '/sbin/shutdown -r now' >> /usr/local/bin/reboot_langsung 
-chmod +x /root/reboot_langsung.sh
-echo "0 5 * * * root /usr/local/bin/reboot_langsung" > /etc/cron.d/reboot_langsung
+echo '#!/bin/bash' > /usr/local/bin/reboot_otomatis 
+echo 'tanggal=$(date +"%m-%d-%Y")' >> /usr/local/bin/reboot_otomatis 
+echo 'waktu=$(date +"%T")' >> /usr/local/bin/reboot_otomatis
+echo 'clear-log' >> /usr/local/bin/reboot-otomatis
+echo 'resett' >> /usr/local/bin/reboot-otomatis
+echo 'echo "Server Berhasil Reboot Pada Tanggal $tanggal Dan Jam $waktu." >> /root/log-reboot.txt' >> /usr/local/bin/reboot_otomatis 
+echo '/sbin/shutdown -r now' >> /usr/local/bin/reboot_otomatis 
+chmod +x /usr/local/bin/reboot_otomatis
+echo "0 */12 * * * root /usr/local/bin/reboot_otomatis" > /etc/cron.d/reboot_otomatis
+chmod +x /usr/local/bin/reboot_otomatis
+echo "0 5 * * * root /usr/local/bin/reboot_otomatis" > /etc/cron.d/reboot_otomatis
 # remove unnecessary files
 apt-get -y autoclean
 apt-get -y remove --purge unscd
@@ -396,16 +398,6 @@ cd
 rm -f /root/ssh-vpn.sh
 rm -f /root/cert.pem
 rm -f /root/key.pem
-
-echo '#!/bin/bash' > /usr/local/bin/reboot_otomatis 
-echo 'tanggal=$(date +"%m-%d-%Y")' >> /usr/local/bin/reboot_otomatis 
-echo 'waktu=$(date +"%T")' >> /usr/local/bin/reboot_otomatis
-echo 'clear-log' >> /usr/local/bin/reboot-otomatis
-echo 'resett' >> /usr/local/bin/reboot-otomatis
-echo 'echo "Server Berhasil Reboot Pada Tanggal $tanggal Dan Jam $waktu." >> /root/log-reboot.txt' >> /usr/local/bin/reboot_otomatis 
-echo '/sbin/shutdown -r now' >> /usr/local/bin/reboot_otomatis 
-chmod +x /usr/local/bin/reboot_otomatis
-echo "0 */12 * * * root /usr/local/bin/reboot_otomatis" > /etc/cron.d/reboot_otomatis
 
 echo -e "Done Install SSH Services" | lolcat
 figlet -f slant OnePieceVPN | lolcat
