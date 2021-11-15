@@ -361,7 +361,6 @@ echo 'resett' >> /usr/local/bin/reboot-otomatis
 echo 'echo "Server Berhasil Reboot Pada Tanggal $tanggal Dan Jam $waktu." >> /root/log-reboot.txt' >> /usr/local/bin/reboot_otomatis 
 echo '/sbin/shutdown -r now' >> /usr/local/bin/reboot_otomatis 
 chmod +x /usr/local/bin/reboot_otomatis
-echo "0 */12 * * * root /usr/local/bin/reboot_otomatis" > /etc/cron.d/reboot_otomatis
 echo "0 5 * * * root /usr/local/bin/reboot_otomatis" > /etc/cron.d/reboot_otomatis
 # remove unnecessary files
 apt-get -y autoclean
