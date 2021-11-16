@@ -205,6 +205,10 @@ connect = 127.0.0.1:44
 accept = 2096
 connect = 127.0.0.1:700
 
+[ws-stunnel1]
+accept = 2097
+connect = 127.0.0.1:200
+
 [openssh]
 accept = 442
 connect = 127.0.0.1:1194
