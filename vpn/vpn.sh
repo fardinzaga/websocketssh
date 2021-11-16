@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Mod by SL
+# Mod by Fauzanvpn
 # ==================================================
 
 # initialisasi var
