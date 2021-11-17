@@ -189,7 +189,7 @@ socket = a:SO_REUSEADDR=1
 socket = l:TCP_NODELAY=1
 socket = r:TCP_NODELAY=1
 
-[dropbear2]
+[dropbear]
 accept = 444
 connect = 127.0.0.1:44
 
