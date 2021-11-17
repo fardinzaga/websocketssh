@@ -197,7 +197,7 @@ connect = 127.0.0.1:44
 accept = 777
 connect = 127.0.0.1:77
 
-[dropbear1]
+[OpenSSH]
 accept = 222
 connect = 127.0.0.1:22
 
