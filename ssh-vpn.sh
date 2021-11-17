@@ -197,7 +197,7 @@ connect = 127.0.0.1:22
 accept = 2096
 connect = 127.0.0.1:700
 
-[dropbear1]
+[dropbear]
 accept = 777
 connect = 127.0.0.1:109 
 
