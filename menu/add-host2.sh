@@ -23,7 +23,7 @@ exit 0
 fi
 mkdir /var/lib/premium-script;
 mkdir /etc/v2ray;
-echo "Tolong masukan domain yang sudah dipointing agar v2ray service work"
+echo "Tolong masukan domain yang sudah dipointing agar work"
 read -p "Hostname / Domain: " host
 echo "IP=$host" >> /var/lib/premium-script/ipvps.conf
 echo "$host" >> /etc/v2ray/domain
