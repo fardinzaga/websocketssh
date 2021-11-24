@@ -6,15 +6,20 @@ MYIP=$(wget -qO- icanhazip.com);
 apt install jq curl -y
 rm -f /root/domain
 rm -f /etc/v2ray/domain
+clear
 
-DOMAIN=herlawanvpn.cf
-sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-SUB_DOMAIN=${sub}.herlawanvpn.cf
-CF_ID=henzrolin@gmailwe.com
-CF_KEY=122794653c0c895e171f2e0a090adbeeca5e9
+DOMAIN=fauzanvpn.xyz
+#read -rp "Masukkan Domain: " -e DOMAIN
+#echo ""
+#echo "Domain: ${DOMAIN}" 
+#echo ""
+read -rp "Masukkan Subdomain: " -e sub
+SUB_DOMAIN=${sub}.${DOMAIN}
+CF_ID=zafrnavpn@nagarata.com
+CF_KEY=1c9b49618e2b7ca363e1dedbca45241e2b789
 set -euo pipefail
-IP=$(wget -qO- icanhazip.com);
-echo "Updating DNS for ${SUB_DOMAIN}..."
+IP=$(wget -qO- ipinfo.io/ip);
+echo "Pointing DNS Untuk Domain ${SUB_DOMAIN}..."
 ZONE=$(curl -sLX GET "https://api.cloudflare.com/client/v4/zones?name=${DOMAIN}&status=active" \
      -H "X-Auth-Email: ${CF_ID}" \
      -H "X-Auth-Key: ${CF_KEY}" \
@@ -41,4 +46,3 @@ RESULT=$(curl -sLX PUT "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_r
 echo "Host : $SUB_DOMAIN"
 echo $SUB_DOMAIN > /root/domain
 echo $SUB_DOMAIN > /etc/v2ray/domain
-echo $SUB_DOMAIN > /var/lib/premium-script/ipvps.conf
