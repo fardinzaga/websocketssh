@@ -7,11 +7,11 @@ apt install jq curl -y
 rm -f /root/domain
 rm -f /etc/v2ray/domain
 
-DOMAIN=fauzanvpn.xyz
+DOMAIN=zafrnavpn.xyz
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-SUB_DOMAIN=${sub}.fauzanvpn.xyz
-CF_ID=zafrnavpn@nagarata.com
-CF_KEY=1c9b49618e2b7ca363e1dedbca45241e2b789
+SUB_DOMAIN=${sub}.zafrnavpn.xyz
+CF_ID=3omar.pokerface1t@roithsai.com
+CF_KEY=a80cef5ae65614455aa4285a40bc45aa63a93
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 echo "Updating DNS for ${SUB_DOMAIN}..."
@@ -41,4 +41,4 @@ RESULT=$(curl -sLX PUT "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_r
 echo "Host : $SUB_DOMAIN"
 echo $SUB_DOMAIN > /root/domain
 echo $SUB_DOMAIN > /etc/v2ray/domain
-echo $SUB_DOMAIN > /var/lib/crot-script/ipvps.conf
+echo $SUB_DOMAIN > /var/lib/premium-script/ipvps.conf
