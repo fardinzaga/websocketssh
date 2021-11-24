@@ -9,7 +9,7 @@ rm -f /etc/v2ray/domain
 
 DOMAIN=herlawanvpn.cf
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-SUB_DOMAIN=${sub}.zafrnavpn.xyz
+SUB_DOMAIN=${sub}.herlawanvpn.cf
 CF_ID=henzrolin@gmailwe.com
 CF_KEY=122794653c0c895e171f2e0a090adbeeca5e9
 set -euo pipefail
