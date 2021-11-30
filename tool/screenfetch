@@ -2686,6 +2686,8 @@ asciiText () {
 "  $c1          \`\"Y\$b._             %s"
 "  $c1              \`\"\"\"\"           %s"
 "                                %s"
+" $c2 Script Mod By Fauzanvpn"
+" $c2 ")
 			;;
 
 		"Devuan")
