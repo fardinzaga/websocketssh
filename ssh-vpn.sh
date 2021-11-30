@@ -82,6 +82,7 @@ wget -O /usr/bin/screenfetch "https://raw.githubusercontent.com/fardinzaga/webso
 chmod +x /usr/bin/screenfetch
 echo "clear" >> .profile
 echo "screenfetch" >> .profile
+echo "echo Mod by Fauzanvpn" >> .profile
 
 # install webserver
 apt -y install nginx
