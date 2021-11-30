@@ -1,6 +1,6 @@
 #!/bin/bash
 
 clear
-echo -e "MOD BY FAUZAN-VPN"
+neofetch
 cat /root/log-install.txt
 echo ""
