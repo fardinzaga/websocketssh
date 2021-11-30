@@ -15,9 +15,9 @@ ver=$VERSION_ID
 country=ID
 state=Indonesia
 locality=Indonesia
-organization=setiawanvpn.com
+organization=fauzanvpn.com
 organizationalunit=fauzanvpn.com
-commonname=setiawanvpn.com
+commonname=fauzanvpn.com
 email=admin@fauzanvpn.com
 
 # common password debian 
