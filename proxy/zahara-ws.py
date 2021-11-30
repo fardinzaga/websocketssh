@@ -16,7 +16,7 @@ MSG = 'PHTUNNELER'
 COR = '<font color="blue">'
 FTAG = '</font>'
 DEFAULT_HOST = '0.0.0.0:22'
-RESPONSE = "HTTP/1.1 101 <h1><font color="#FF00FF"> Fauzan x Setiawan Switching Protocols </font></h1>\r\nContent-Length: 1048576000000\r\n\r\n"
+RESPONSE = "HTTP/1.1 101 <h1><font color="#FF00FF"> Fauzan x Setiawan Switching Protocols \r\nContent-Length: 1048576000000\r\n\r\n"
  
 class Server(threading.Thread):
     def __init__(self, host, port):
