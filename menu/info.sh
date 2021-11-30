@@ -1,6 +1,6 @@
 #!/bin/bash
 
 clear
-neofetch
+screenfetch
 cat /root/log-install.txt
 echo ""
