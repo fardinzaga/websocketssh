@@ -76,13 +76,12 @@ ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 # set locale
 sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
 
-# install
-apt-get --reinstall --fix-missing install -y bzip2 gzip coreutils wget screen rsyslog iftop htop net-tools zip unzip wget net-tools curl nano sed screen gnupg gnupg1 bc apt-transport-https build-essential dirmngr libxml-parser-perl neofetch git lsof
+# install screenfetch
+cd
+wget -O /usr/bin/screenfetch "https://raw.githubusercontent.com/wangzki03/VPSauto/master/tool/screenfetch"
+chmod +x /usr/bin/screenfetch
 echo "clear" >> .profile
-echo "echo =============================" >> .profile
-echo "echo Selamat Datang Fauzanvpn !" >> .profile
-echo "echo Ketik menu untuk melihat list" >> .profile
-echo "echo =============================" >> .profile
+echo "screenfetch" >> .profile
 
 # install webserver
 apt -y install nginx
