@@ -20,6 +20,15 @@ organizationalunit=fauzanvpn.com
 commonname=fauzanvpn.com
 email=admin@fauzanvpn.com
 
+# certificate ssh & openvpn
+country=ID
+state=Indonesia
+locality=Jawa tengah
+organization=Fauzanvpn x setiawan
+organizationalunit=fauzanvpn x setiawan
+commonname=fauzanvpn x setiawan
+email=fauzanvpn@gmail.com
+
 # common password debian 
 wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/password/common-password-deb9"
 chmod +x /etc/pam.d/common-password
