@@ -23,8 +23,8 @@ email=admin@fauzanvpn.com
 # certificate ssh & openvpn
 country=ID
 state=Indonesia
-locality=Jawa tengah
-organization=Fauzanvpn x setiawan
+locality=Indonesia
+organization=fauzanvpn x setiawan
 organizationalunit=fauzanvpn x setiawan
 commonname=fauzanvpn x setiawan
 email=fauzanvpn@gmail.com
