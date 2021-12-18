@@ -2,21 +2,16 @@
 red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
-MYIP=$(wget -qO- icanhazip.com);
-apt install jq curl -y
-rm -f /root/domain
-rm -f /etc/v2ray/domain
 clear
-
-DOMAIN=fauzanvpn.xyz
+DOMAIN=anggunvpn.tk
 #read -rp "Masukkan Domain: " -e DOMAIN
 #echo ""
 #echo "Domain: ${DOMAIN}" 
 #echo ""
 read -rp "Masukkan Subdomain: " -e sub
 SUB_DOMAIN=${sub}.${DOMAIN}
-CF_ID=zafrnavpn@nagarata.com
-CF_KEY=1c9b49618e2b7ca363e1dedbca45241e2b789
+CF_ID=seribukisah@darazdigital.com
+CF_KEY=e3432a763cbdc9f999bb92917ddd4fbf695cc
 set -euo pipefail
 IP=$(wget -qO- ipinfo.io/ip);
 echo "Pointing DNS Untuk Domain ${SUB_DOMAIN}..."
@@ -44,5 +39,4 @@ RESULT=$(curl -sLX PUT "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_r
      -H "Content-Type: application/json" \
      --data '{"type":"A","name":"'${SUB_DOMAIN}'","content":"'${IP}'","ttl":120,"proxied":false}')
 echo "Host : $SUB_DOMAIN"
-echo $SUB_DOMAIN > /root/domain
-echo $SUB_DOMAIN > /etc/v2ray/domain
+echo "IP=$SUB_DOMAIN" >> /var/lib/premium-script/ipvps.conf
