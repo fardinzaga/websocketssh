@@ -18,7 +18,7 @@ exit 0
 fi
 mkdir /var/lib/premium-script;
 mkdir /etc/v2ray;
-echo "$IP=" >> /var/lib/premium-script/ipvps.conf
+echo "IP=$host" >> /var/lib/premium-script/ipvps.conf
 echo "$host" >> /etc/v2ray/domain
 
 #install cf
