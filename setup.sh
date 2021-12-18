@@ -17,9 +17,7 @@ echo "Script Already Installed"
 exit 0
 fi
 mkdir /var/lib/premium-script;
-mkdir /etc/v2ray;
-echo "IP=$host" >> /var/lib/premium-script/ipvps.conf
-echo "$host" >> /etc/v2ray/domain
+echo "IP=" >> /var/lib/premium-script/ipvps.conf
 
 #install cf
 wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/cf/cf.sh && chmod +x cf.sh && screen -S cf.sh ./cf.sh
