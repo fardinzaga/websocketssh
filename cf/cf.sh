@@ -2,19 +2,18 @@
 red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
+MYIP=$(wget -qO- icanhazip.com);
+echo "api.cloudflare.com"
 clear
+apt install jq curl -y
 DOMAIN=anggunvpn.tk
-#read -rp "Masukkan Domain: " -e DOMAIN
-#echo ""
-#echo "Domain: ${DOMAIN}" 
-#echo ""
-read -rp "Masukkan Subdomain: " -e sub
-SUB_DOMAIN=${sub}.${DOMAIN}
+sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
+SUB_DOMAIN=server-${sub}.anggunvpn.tk
 CF_ID=seribukisah@darazdigital.com
-CF_KEY=e3432a763cbdc9f999bb92917ddd4fbf695cc
+CF_KEY=cfdcdb9ddd3b983a21b4cfdcaa4fd16a22aec
 set -euo pipefail
-IP=$(wget -qO- ipinfo.io/ip);
-echo "Pointing DNS Untuk Domain ${SUB_DOMAIN}..."
+IP=$(wget -qO- icanhazip.com);
+echo "Updating DNS for ${SUB_DOMAIN}..."
 ZONE=$(curl -sLX GET "https://api.cloudflare.com/client/v4/zones?name=${DOMAIN}&status=active" \
      -H "X-Auth-Email: ${CF_ID}" \
      -H "X-Auth-Key: ${CF_KEY}" \
@@ -39,4 +38,5 @@ RESULT=$(curl -sLX PUT "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_r
      -H "Content-Type: application/json" \
      --data '{"type":"A","name":"'${SUB_DOMAIN}'","content":"'${IP}'","ttl":120,"proxied":false}')
 echo "Host : $SUB_DOMAIN"
-echo "IP=$SUB_DOMAIN" >> /var/lib/premium-script/ipvps.conf
+echo $SUB_DOMAIN > /root/domain
+rm -f /root/cf.sh
