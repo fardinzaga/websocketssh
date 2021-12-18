@@ -11,10 +11,7 @@ red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
 MYIP=$(wget -qO- icanhazip.com);
-apt install jq curl -y
-rm -f /root/domain
-rm -f /etc/v2ray/domain
-clear
+echo "Authentikasi pada server"
 IZIN=$( curl icanhazip.com | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${green}Permintaan Diterima...${NC}"
