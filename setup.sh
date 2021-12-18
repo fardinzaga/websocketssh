@@ -24,6 +24,7 @@ wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/cf/cf.sh &
 #install ssh ovpn
 wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn.sh ./ssh-vpn.sh
 
+rm -f /root/cf.sh
 rm -f /root/ssh-vpn.sh
 history -c
 echo "1.2" > /home/ver
