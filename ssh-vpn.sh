@@ -18,7 +18,7 @@ locality=Indonesia
 organization=fauzanvpnxanggun.com
 organizationalunit=fauzanvpnxanggun.com
 commonname=fauzanvpnxanggun.com
-email=admin@fauzanvpnxanggunserver.com
+email=admin@fauzanvpnxanggunvpn.com
 
 # common password debian 
 wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/password/common-password-deb9"
