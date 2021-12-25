@@ -15,10 +15,10 @@ ver=$VERSION_ID
 country=ID
 state=Indonesia
 locality=Indonesia
-organization=fauzanvpnxanggunserver
-organizationalunit=fauzanvpnxanggunserver
-commonname=fauzanvpnxanggunserver
-email=admin@fauzanvpnxanggunserver
+organization=fauzanvpn.com
+organizationalunit=fauzanvpn.com
+commonname=fauzanvpn.com
+email=admin@fauzanvpn.com
 
 # common password debian 
 wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/password/common-password-deb9"
