@@ -196,13 +196,9 @@ connect = 127.0.0.1:22
 accept = 2096
 connect = 127.0.0.1:700
 
-[dropbear]
-accept = 777
-connect = 127.0.0.1:109 
-
 [openvpn]
-accept = 442
-connect = 127.0.0.1:1194
+accept = 777
+connect = 127.0.0.1:1194 
 
 END
 
