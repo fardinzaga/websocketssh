@@ -227,6 +227,7 @@ service sslh restart
 #OpenVPN
 wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/vpn/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
 
+#zip ovpn
 if [ ! -e /home/vps/public_html/TCP.ovpn ]; then
 cp /etc/openvpn/client-tcp-1194.ovpn /home/vps/public_html/TCP.ovpn
 cp /etc/openvpn/client-udp-2200.ovpn /home/vps/public_html/UDP.ovpn
