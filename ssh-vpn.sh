@@ -229,7 +229,7 @@ wget -O /etc/default/sslh "https://raw.githubusercontent.com/fardinzaga/websocke
 service sslh restart
 
 #OpenVPN
-wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/vpn/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
+wget https://raw.githubusercontent.com/fardinzaga/websocketssh/master/vpn2/vpn2 &&  chmod +x vpn2.sh && ./vpn2.sh
 
 #install zipopenvpn
 if [ ! -e /home/vps/public_html/TCP.ovpn ]; then
