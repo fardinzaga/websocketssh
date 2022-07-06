@@ -10,7 +10,6 @@ OS=`uname -m`;
 MYIP=$(wget -qO- icanhazip.com);
 MYIP2="s/xxxxxxxxx/$MYIP/g";
 ANU=$(ip -o $ANU -4 route show to default | awk '{print $5}');
-MySentev="$(cat /etc/v2ray/domain)";
 
 
 # Install OpenVPN dan Easy-RSA
