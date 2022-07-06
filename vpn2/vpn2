@@ -11,7 +11,6 @@ MYIP=$(wget -qO- icanhazip.com);
 MYIP2="s/xxxxxxxxx/$MYIP/g";
 ANU=$(ip -o $ANU -4 route show to default | awk '{print $5}');
 
-
 # Install OpenVPN dan Easy-RSA
 apt-get install -y openvpn dnsutils easy-rsa unzip 
 apt install -y openvpn dnsutils easy-rsa unzip 
