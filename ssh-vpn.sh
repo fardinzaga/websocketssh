@@ -93,6 +93,12 @@ mkdir -p /home/vps/public_html
 wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/fardinzaga/websocketssh/master/nginx/vps.conf"
 /etc/init.d/nginx restart
 
+Index_port='81'
+IPADDR=$(wget -qO- icanhazip.com);
+# creating page download Openvpn config file
+mkdir -p /home/vps/public_html
+wget -O /home/vps/public_html/index.html "https://raw.githubusercontent.com/syapik96/aws/main/lain2/index.html"
+
 # Creating a SSH server config using cat eof tricks
 cat <<'MySSHConfig' > /etc/ssh/sshd_config
 # Setup By Fauzan-Vpn
