@@ -5,7 +5,7 @@
 cd
 
 #Install Script Websocket-SSH Python
-#wget -O /usr/local/bin/ws-openssh https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/openssh-socket.py
+wget -O /usr/local/bin/ws-openssh https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/openssh-socket.py
 wget -O /usr/local/bin/ws-udin https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/udin-ws.py
 wget -O /usr/local/bin/ws-maulana https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/maulana-ws.py
 wget -O /usr/local/bin/ws-zahara https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/zahara-ws.py
