@@ -29,6 +29,9 @@ chmod +x /usr/local/bin/ws-ovpn
 #System OpenSSH Websocket-SSH Python
 #wget -O /etc/systemd/system/ws-openssh.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/service-wsopenssh && chmod +x /etc/systemd/system/ws-openssh.service
 
+#System Websocket-OpenVPN Python
+wget -O /etc/systemd/system/ws-ovpn2.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/service.wsovpn2 && chmod +x /etc/systemd/system/ws-ovpn2.service
+
 #System OpenSSH Websocket-SSH Python
 wget -O /etc/systemd/system/ws-udin.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/service.wsudin && chmod +x /etc/systemd/system/ws-udin.service
 
