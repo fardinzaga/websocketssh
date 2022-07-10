@@ -17,6 +17,7 @@ wget -O /usr/local/bin/ws-ovpn https://raw.githubusercontent.com/fardinzaga/webs
 
 #izin permision
 #chmod +x /usr/local/bin/ws-openssh
+chmod +x /usr/local/bin/ws-ovpn2
 chmod +x /usr/local/bin/ws-udin
 chmod +x /usr/local/bin/ws-maulana
 chmod +x /usr/local/bin/ws-zahara
@@ -57,6 +58,11 @@ wget -O /etc/systemd/system/ws-ovpn.service https://raw.githubusercontent.com/fa
 #systemctl enable ws-openssh.service
 #systemctl start ws-openssh.service
 #systemctl restart ws-openssh.service
+
+#Enable & Start ws-ovpn2 service
+systemctl enable ws-ovpn2.service
+systemctl start ws-ovpn2.service
+systemctl restart ws-ovpn2.service
 
 #Enable & Start & Restart ws-udin service
 systemctl enable ws-udin.service
