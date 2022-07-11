@@ -6,7 +6,6 @@ cd
 
 #Install Script Websocket-SSH Python
 #wget -O /usr/local/bin/ws-openssh https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/openssh-socket.py
-wget -O /usr/local/bin/ws-ovpn2 https://raw.githubusercontent.com/fardinzaga/websocketssh/master/ovpn2-ws.py
 wget -O /usr/local/bin/ws-udin https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/udin-ws.py
 wget -O /usr/local/bin/ws-maulana https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/maulana-ws.py
 wget -O /usr/local/bin/ws-zahara https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/zahara-ws.py
@@ -17,7 +16,6 @@ wget -O /usr/local/bin/ws-ovpn https://raw.githubusercontent.com/fardinzaga/webs
 
 #izin permision
 #chmod +x /usr/local/bin/ws-openssh
-chmod +x /usr/local/bin/ws-ovpn2
 chmod +x /usr/local/bin/ws-udin
 chmod +x /usr/local/bin/ws-maulana
 chmod +x /usr/local/bin/ws-zahara
@@ -28,9 +26,6 @@ chmod +x /usr/local/bin/ws-ovpn
 
 #System OpenSSH Websocket-SSH Python
 #wget -O /etc/systemd/system/ws-openssh.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/service-wsopenssh && chmod +x /etc/systemd/system/ws-openssh.service
-
-#System Websocket-OpenVPN Python
-wget -O /etc/systemd/system/ws-ovpn2.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/service.wsovpn2 && chmod +x /etc/systemd/system/ws-ovpn2.service
 
 #System OpenSSH Websocket-SSH Python
 wget -O /etc/systemd/system/ws-udin.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/service.wsudin && chmod +x /etc/systemd/system/ws-udin.service
@@ -61,11 +56,6 @@ wget -O /etc/systemd/system/ws-ovpn.service https://raw.githubusercontent.com/fa
 #systemctl enable ws-openssh.service
 #systemctl start ws-openssh.service
 #systemctl restart ws-openssh.service
-
-#Enable & Start ws-ovpn2 service
-systemctl enable ws-ovpn2.service
-systemctl start ws-ovpn2.service
-systemctl restart ws-ovpn2.service
 
 #Enable & Start & Restart ws-udin service
 systemctl enable ws-udin.service
