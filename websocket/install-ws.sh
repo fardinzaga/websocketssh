@@ -12,7 +12,6 @@ wget -O /usr/local/bin/ws-zahara https://raw.githubusercontent.com/fardinzaga/we
 wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/dropbear-ws.py
 wget -O /usr/local/bin/ws-fauzanvpn https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/fauzanvpn-ws.py
 wget -O /usr/local/bin/ws-ovpn https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/ws-ovpn.py && chmod +x /usr/local/bin/ws-ovpn.py
-wget -O /usr/local/bin/ws-ovpn2 https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/ws-ovpn2.py && chmod +x /usr/local/bin/ws-ovpn2.py
 #wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/ws-stunnel.py && chmod +x /usr/local/bin/ws-stunnel.py
 
 #izin permision
@@ -23,7 +22,6 @@ chmod +x /usr/local/bin/ws-zahara
 chmod +x /usr/local/bin/ws-dropbear
 chmod +x /usr/local/bin/ws-fauzanvpn
 chmod +x /usr/local/bin/ws-ovpn
-chmod +x /user/local/bin/ws-ovpn2
 #chmod +x /usr/local/bin/ws-stunnel
 
 #System OpenSSH Websocket-SSH Python
@@ -46,9 +44,6 @@ wget -O /etc/systemd/system/ws-fauzanvpn.service https://raw.githubusercontent.c
 
 #System Websocket-OpenVPN Python
 wget -O /etc/systemd/system/ws-ovpn.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/service.wsovpn && chmod +x /etc/systemd/system/ws-ovpn.service
-
-#System Websocket-OpenVPN Python
-wget -O /etc/systemd/system/ws-ovpn2.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/service.wsovpn2 && chmod +x /etc/systemd/system/ws-ovpn2.service
 
 ##System SSL/TLS Websocket-SSH Python
 #wget -O /etc/systemd/system/ws-stunnel.service https://raw.githubusercontent.com/fardinzaga/websocketssh/master/proxy/service.wsstunnel && chmod +x /etc/systemd/system/ws-stunnel.service
@@ -91,11 +86,6 @@ systemctl restart ws-fauzanvpn.service
 systemctl enable ws-ovpn.service
 systemctl start ws-ovpn.service
 systemctl restart ws-ovpn.service
-
-#Enable & Start ws-ovpn2 service
-systemctl enable ws-ovpn2.service
-systemctl start ws-ovpn2.service
-systemctl restart ws-ovpn2.service
 
 #Enable & Start & Restart ws-stunnel service
 #systemctl enable ws-stunnel.service
