@@ -190,6 +190,10 @@ connect = 127.0.0.1:22
 accept = 2096
 connect = 127.0.0.1:700
 
+[ovpn]
+accept = 2053
+connect = 127.0.0.1:900
+
 [openvpn]
 accept = 442
 connect = 127.0.0.1:1194 
